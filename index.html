@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110688319-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110688319-1');
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>kode &hearts; @elisejakob.no</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script>
+            function styleTime() {
+                var currentTime = new Date().getHours();
+                if (5 <= currentTime&&currentTime <= 18) {
+                    document.write("<link rel='stylesheet' href='css/day.css' type='text/css'>");
+                } else {
+                    document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
+                }
+            }
+            styleTime();
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Koderessurser</h1>
+            <p class="lead">Dette er en samling av mine favorittressurser for å lære seg koding! Disse passer for deg som vil lære deg å lage nettsider. Jeg fyller på etterhvert som jeg finner bra ting!<br /><span class="heart">&hearts;</span>lig hilsen <a href="http://elisejakob.no">Elise</a></p>
+        </header>
+        <main>
+            <ul class="resources">
+                <li>
+                    <h2><a href="http://dontfeartheinternet.com/">Don't fear the internet</a></h2>
+                    <p>En samling av korte videoer som tar for seg alt fra hva internett og HTML er, til hvordan man jobber med typografi på web, med behagelig jazz i bakgrunnen.</p>
+                </li>
+                <li>
+                    <h2><a href="https://www.codecademy.com/learn/make-a-website">Codecademy: Make a Website</a></h2>
+                    <p>Codecademy er en nettside med en rekke interaktive kurs for å lære ulike typer programmeringsspråk. Dette er kurset for deg som vil lære litt av alt det du trenger for å lage en nettside fra bunnen av. Du blir tatt igjennom materialet steg for steg, og kan prøve deg på kode live i en teksteditor på nettsiden. Skikkelig inn-med-teskje!</p>
+                </li>
+                <li>
+                    <h2><a href="https://www.superhi.com/">SuperHi</a></h2>
+                    <p>Ganske ny, så jeg har ikke prøvd denne selv ennå, men det virker veldig bra! De har både en fysisk bok, og interaktive kurs på nettsiden, og videoer.</p>
+                </li>
+                <li>
+                    <h2><a href="https://htmlreference.io/">htmlreference.io</a></h2>
+                    <p>Oppslagsverk med eksempler og info om alle HTML-tags som finnes. Tekstelementer, lenker, bilder, video, og alt det andre som er med på å strukturere innholdet på nettsiden.</p>
+                </li>
+                <li>
+                    <h2><a href="https://cssreference.io/">cssreference.io</a></h2>
+                    <p>Oppslagsverk med eksempler og info om alle CSS-regler som finnes. Farger, fonter, layout, animasjoner, og alt imellom.</p>
+                </li>
+                <li>
+                    <h2><a href="https://fonts.google.com/">Google Fonts</a></h2>
+                    <p>Gratis fontbibliotek for de som ikke har råd til å kjøpe egne webfonter for å bruke på nettsiden sin. De har også en egen <a href="https://developers.google.com/fonts/docs/getting_started">guide</a> til hvordan du bruker fontene i koden din.</p>
+                </li>
+                <li>
+                    <h2><a href="https://codepen.io/">Codepen</a></h2>
+                    <p>Nettside som lar deg jobbe med små kodeeksperimenter rett i nettleseren. Hvis du kun skal prøve ut noe, og ikke vil opprette en egen mappe med filer på din egen datamaskin, kan du bruke codepen til å teste ting raskt. Du kan også se kule ting andre har laget med verktøyet.</p>
+                </li>
+                <li>
+                    <h2><a href="https://caniuse.com/">Can I use &hellip; ?</a></h2>
+                    <p>Oppslagsverk for å finne ut av hvilke nettlesere som støtter de nye greiene som lages i de ulike kodespråkene. Her får man også tall på hvor utbredt bruken av hver nettleser er.</p>
+                </li>
+            </ul>
+            <div>
+                <h2>Hvilket program bør du bruke for å skrive kode?</h2>
+                <p>Du kan skrive kode i TextEdit som allerede finnes på macen din, men for å gjøre det lettere bør du ha en skikkelig kode-editor, et program tilpasset å skrive kode. Det er en rekke ting kode-editorer kan gjøre automatisk, og de ulike editorene som finnes har litt ulik funksjonalitet. En skikkelig kode-editor kjenner igjen hvilke kodespråk du skriver, og gjør koden lettere å lese med bruk av farger og indentering. Prøv deg frem med:</p>
+                <ul>
+                    <li><a href="https://code.visualstudio.com/">VS Code</a> (gratis)</li>
+                    <li><a href="https://atom.io/">Atom</a> (gratis)</li>
+                    <li><a href="https://www.sublimetext.com/">Sublime Text</a> (gratis, men maser jevnlig om at du skal betale lisens)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Hvordan se koden til en nettside?</h2>
+                <p>Hvis du høyreklikker på bakgrunnen til en nettside og trykker "Vis sidekilde" eller tilsvarende, vil du kunne se HTML-koden som denne nettsiden er bygget opp av. Det er riktignok bare en liten del av det store bildet. Hvis du vil se hvordan et element på en nettside er laget, for eksempel hvordan jeg har laget <span class="gradient">denne fete gradienten</span>, kan du høyreklikke på elementet og velge "Inspiser element". Du vil da få opp utviklerverktøyet i nettleseren din som viser både HTML og CSS.<br />Bruker du Safari? Da må du <a href="https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html">slå på utviklerverktøyet</a> i menyen først.</p>
+            </div>
+        </main>
+        <footer>
+            <p class="footer">Lyst til å lære å kode? Synes du det er vanskelig å komme i gang på egenhånd? Du er velkommen til å <a href="mailto:hei@elisejakob.no">spørre meg &#9993;</a> om hva som helst! Jeg svarer skikkelig raskt på e-post, og er tilgjengelig for kurs, workshops og foredrag.</a></p>
+        </footer>
+        <div class="triangle"></div>
+    </body>
+</html>
