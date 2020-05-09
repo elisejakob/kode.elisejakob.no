@@ -1,0 +1,291 @@
+/* fonter importert fra fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Roboto:400,400i,700,700i,900,900i&display=swap');
+
+
+/* ------------ generell styling ------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'roboto mono', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  background: #fff;
+  color: #222;
+  margin: 0;
+  border: 1px dotted black;
+}
+
+/* ------------ header ------------ */
+
+header {
+  padding: 2rem 2rem 1.6rem;
+  border-bottom: 1px dotted black;
+}
+
+header h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'roboto mono', monospace;
+}
+
+/* ------------ links ------------ */
+
+a {
+  color: crimson;
+  font-weight: bold;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+a:visited {
+  color: orange;
+}
+
+/* ------------ typography ------------ */
+
+p {
+  max-width: 32rem;
+  margin: 0 0 2rem;
+}
+
+.lead {
+  font-family: 'roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 1.3;
+  max-width: 54rem;
+}
+
+.caption {
+  font-size: 14px;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.important {
+  color: crimson;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  font-size: 14px;
+  position: relative;
+}
+
+.important:before {
+  content: "*";
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+@media (max-width: 1000px) {
+  h1, h2, h3 {
+    font-size: 2em;
+  }
+}
+
+blockquote {
+  font-size: 2.8rem;
+  font-style: italic;
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  max-width: 32rem;
+  margin: 5rem auto;
+}
+blockquote:before {
+  content: '—';
+}
+.quoteby {
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* ------------ table of contents ------------ */
+
+.table-of-contents {
+  border-right: 1px dotted black;
+  font-size: 14px;
+}
+
+.table-of-contents ul {
+  margin: .6rem 0 1rem;
+}
+
+/* ------------ actual content ------------ */
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+section {
+  padding: 5rem 10%;
+  border-top: 1px dotted black;
+}
+
+section:first-of-type {
+  border-top: none;
+}
+
+.split {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .split {
+    display: block;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+
+ul ul {
+  margin-top: .5rem;
+  font-size: 14px;
+}
+
+li {
+  margin-bottom: .6rem;
+}
+
+code {
+  display: block;
+  background: #eee;
+}
+
+figure {
+  margin: 1rem auto 5rem;
+}
+
+figcaption {
+  font-size: 14px;
+  max-width: 32rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.video {
+  margin: 2rem auto;
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shortcut {
+  display: inline-block;
+  width: auto;
+  background: white;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  font-weight: normal;
+  text-decoration: none;
+}
+.shortcut:visited {
+  color: blue;
+}
+.shortcut:hover {
+  color: lime;
+  border-color: lime;
+}
+
+/* ------------ resource list ------------ */
+
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 60px;
+  padding: 0;
+}
+
+.resources li {
+  padding-right: 6em;
+  width: 50%;
+  min-width: 400px;
+  margin-bottom: 60px;
+}
+
+/* ------------ animation & graphics ------------ */
+
+.heart {
+  color: crimson;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.gradient {
+  color: black;
+  background: linear-gradient(60deg, pink, yellow, cyan, lime);
+  border-radius: 2px;
+  padding: 0 0.3em;
+  font-weight: bold;
+}
+
+/* ------------ footer ------------ */
+
+.bottom-nav {
+  display: flex;
+}
+
+.bottom-nav a {
+  display: block;
+  width: 50%;
+  border-top: 1px dotted black;
+  padding: 1rem 2rem;
+}
+
+.previous {
+  border-right: 1px dotted black;
+}
+/* ------------ footer ------------ */
+
+footer {
+  padding: 6rem 2rem 2rem;
+  border-top: 1px dotted black;
+}

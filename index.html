@@ -1,88 +1,228 @@
 <!doctype html>
 <html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110688319-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'UA-110688319-1');
-        </script>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>kode &hearts; @elisejakob.no</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <script>
-            function styleTime() {
-                var currentTime = new Date().getHours();
-                if (5 <= currentTime&&currentTime <= 18) {
-                    document.write("<link rel='stylesheet' href='css/day.css' type='text/css'>");
-                } else {
-                    document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
-                }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KODEKURS &hearts;</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Kodekurs: Lag din første nettside</h1>
+  </header>
+
+  <main>
+    <nav class="table-of-contents">
+      <ul>
+        <li>
+          <a href="kapitler/intro.html">Intro</a>
+          <ul>
+            <li><a href="#">Hvorfor???</a></li>
+            <li><a href="#">Hva???</a></li>
+            <li>
+              <a href="#">Kodespråk</a>
+              <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JS</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Hvordan???</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/intro.html">Din første HTML-fil</a>
+          <ul>
+            <li><a href="#">Mappe og filnavn</a></li>
+            <li><a href="#">Head, body og footer</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/intro.html">Innhold</a>
+          <ul>
+            <li><a href="kapitler/intro.html#html">Tekst</a></li>
+            <li><a href="kapitler/intro.html#css">Bilder</a></li>
+            <li><a href="kapitler/intro.html#js">Sider</a></li>
+            <li><a href="kapitler/intro.html#js">Lenker</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/intro.html">Design</a>
+          <ul>
+            <li><a href="kapitler/intro.html#html">Farger</a></li>
+            <li><a href="kapitler/intro.html#css">Fonter</a></li>
+            <li><a href="kapitler/intro.html#js">Layout</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/intro.html">Publisering</a>
+          <ul>
+            <li><a href="kapitler/intro.html#html">Domene</a></li>
+            <li><a href="kapitler/intro.html#css">Server</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">For viderekomne</a>
+          <ul>
+            <li><a href="#">Favicon</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Mobiltilpasning</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="inspirasjon.html">Inspirasjon</a>
+        </li>
+        <li>
+          <a href="ressurser.html">Ressurser</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <section>
+        <p class="lead">
+          Hei! Dette er bare en liten guide til hvordan man koder sin første nettside. Du trenger ingen forkunnskaper!
+        </p>
+        <a href="kapitler/intro.html" class="shortcut" onclick="alert('Ivrig, hæ? Det kan være ting forklart i introen som du burde få med deg, men du kan jo alltids komme tilbake senere')">Jeg gidder ikke lese introen, hopp rett til det praktiske</a>
+        <p class="important">Jeg vil veldig gjerne ha tilbakemeldinger på ting som ikke funker, ting som er vanskelig forklart, skrivefeil, etc, sånn at jeg kan gjøre denne guiden enda bedre! Send meg gjerne en <a href="mailto:hei@elisejakob.no">mail</a> hvis du oppdager noe jeg burde rette på.</p>
+      </section>
+
+      <section>
+        <h2>Hvorfor lære å kode?</h2>
+        <p class="lead">Utviklere gjør kode, jeg som designer trenger vel ikke det? Må man ikke være god i matte for å kunne kode?</p>
+        <figure>
+          <img src="bilder/first-website-ever.png" />
+          <figcaption><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">Den første nettsiden ever</a> er fortsatt online.</figcaption>
+        </figure>
+        <figure>
+          <img src="bilder/computer.gif" />
+          <figcaption>Nettsider var kulere på 90-tallet. Bare se på <a href="#">Web museum</a>. Jeg har samlet en egen side for <a href="#">inspirasjon</a>.</figcaption>
+        </figure>
+        <figure>
+          <img src="bilder/data.gif" />
+          <figcaption>Nettsider var kulere på 90-tallet. Bare se på <a href="#">Web museum</a>. Jeg har samlet en egen side for <a href="#">inspirasjon</a>.</figcaption>
+        </figure>
+        <code>
+          <xmp>
+            <body>
+              Hei
+            </body>
+          </xmp>
+        </code>
+      </section>
+
+      <section id="what">
+        <h2>Hva er egentlig en nettside?</h2>
+        <p>Fakta om hva en nettside er</p>
+        <a href="#video-summary1" class="shortcut" onclick="alert('Bare så du vet det så brukte jeg ganske lang tid på å skrive all denne teksten for din skyld')">Jeg gidder ikke lese, jeg vil heller se en video</a>
+        <figure>
+          <img src="bilder/filer.png" />
+          <figcaption>En nettside er egentlig bare en mappe med filer.</figcaption>
+        </figure>
+        <div id="video-summary1" class="video-summary">
+          <h3>Videooppsummering</h3>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/24006296?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <p class="caption">Designeren Jessica Hische og mannen hennes Russ har laget flere videoer som forklarer internett på en hyggelig måte, sjekk ut <a href="http://dontfeartheinternet.com/">dontfeartheinternet.com</a>!</p>
+        </div>
+      </section>
+
+      <section id="html">
+        <h2>HTML</h2>
+        <p>HTML står for HyperText Markup Language</p>
+        "hyperlenke"
+        "markerer opp" innholdet
+        HTML markerer og beskriver HVA de ulike innholdselementene på siden ER for noe, så nettleseren vet hvordan den skal vise innholdet
+        for eksempel: denne delen av koden er en overskrift, denne delen av koden er en lenke, mens denne delen av koden skal vises som et bilde
+        HTML brukes også til å gi metainformasjon OM nettsiden; hva er tittelen, hvem har laget den
+        vis kildekode
+        motherfuckingwebsite.com
+        <code>
+          <xmp>
+            <h1>
+              Overskrift nivå 1
+            </h1>
+          </xmp>
+        </code>
+      </section>
+
+      <section id="css">
+        <h2>CSS</h2>
+        <p>CSS står for "Cascading Style Sheets". Det funker litt som paragraph styles i InDesign. Selve språket skriver som ganske rett frem engelsk. Man bruker CSS til å gi navn til elementene man har laget i HTML, og deretter til å beskrive hvordan de skal se ut.</p>
+        <code>
+          <xmp>
+            h1 {
+              color: pink;
+              font-size: 16px;
             }
-            styleTime();
-        </script>
-    </head>
-    <body>
-        <header>
-            <h1>Koderessurser</h1>
-            <p class="lead">Dette er en samling av mine favorittressurser for å lære seg koding! Disse passer for deg som vil lære deg å lage nettsider. Jeg fyller på etterhvert som jeg finner bra ting!<br /><span class="heart">&hearts;</span>lig hilsen <a href="http://elisejakob.no">Elise</a></p>
-        </header>
-        <main>
-            <ul class="resources">
-                <li>
-                    <h2><a href="http://dontfeartheinternet.com/">Don't fear the internet</a></h2>
-                    <p>En samling av korte videoer som tar for seg alt fra hva internett og HTML er, til hvordan man jobber med typografi på web, med behagelig jazz i bakgrunnen.</p>
-                </li>
-                <li>
-                    <h2><a href="https://www.codecademy.com/learn/make-a-website">Codecademy: Make a Website</a></h2>
-                    <p>Codecademy er en nettside med en rekke interaktive kurs for å lære ulike typer programmeringsspråk. Dette er kurset for deg som vil lære litt av alt det du trenger for å lage en nettside fra bunnen av. Du blir tatt igjennom materialet steg for steg, og kan prøve deg på kode live i en teksteditor på nettsiden. Skikkelig inn-med-teskje!</p>
-                </li>
-                <li>
-                    <h2><a href="https://www.superhi.com/">SuperHi</a></h2>
-                    <p>Ganske ny, så jeg har ikke prøvd denne selv ennå, men det virker veldig bra! De har både en fysisk bok, og interaktive kurs på nettsiden, og videoer.</p>
-                </li>
-                <li>
-                    <h2><a href="https://htmlreference.io/">htmlreference.io</a></h2>
-                    <p>Oppslagsverk med eksempler og info om alle HTML-tags som finnes. Tekstelementer, lenker, bilder, video, og alt det andre som er med på å strukturere innholdet på nettsiden.</p>
-                </li>
-                <li>
-                    <h2><a href="https://cssreference.io/">cssreference.io</a></h2>
-                    <p>Oppslagsverk med eksempler og info om alle CSS-regler som finnes. Farger, fonter, layout, animasjoner, og alt imellom.</p>
-                </li>
-                <li>
-                    <h2><a href="https://fonts.google.com/">Google Fonts</a></h2>
-                    <p>Gratis fontbibliotek for de som ikke har råd til å kjøpe egne webfonter for å bruke på nettsiden sin. De har også en egen <a href="https://developers.google.com/fonts/docs/getting_started">guide</a> til hvordan du bruker fontene i koden din.</p>
-                </li>
-                <li>
-                    <h2><a href="https://codepen.io/">Codepen</a></h2>
-                    <p>Nettside som lar deg jobbe med små kodeeksperimenter rett i nettleseren. Hvis du kun skal prøve ut noe, og ikke vil opprette en egen mappe med filer på din egen datamaskin, kan du bruke codepen til å teste ting raskt. Du kan også se kule ting andre har laget med verktøyet.</p>
-                </li>
-                <li>
-                    <h2><a href="https://caniuse.com/">Can I use &hellip; ?</a></h2>
-                    <p>Oppslagsverk for å finne ut av hvilke nettlesere som støtter de nye greiene som lages i de ulike kodespråkene. Her får man også tall på hvor utbredt bruken av hver nettleser er.</p>
-                </li>
+          </xmp>
+        </code>
+      </section>
+
+      <section id="js">
+        <h2>JavaScript</h2>
+        <p>JavaScript er det eneste språket av disse tre som er et ekte programmeringsspråk. All interaksjon som ikke bare innebærer å klikke på en lenke for å komme til en ny statisk side, gjøres med JavaScript. JavaScript er ikke en del av dette kurset, men under <a href="#">ressurser</a> kan du finne lenker til JavaScript-tutorials hvis du har lyst til å lære mer om det.</p>
+        <p>Eksempler på ting man trenger JavaScript til:</p>
+        <h3>Pop-ups</h3>
+        <figure>
+          <img src="bilder/popup.gif" />
+          <figcaption>Gif stjålet fra <a href="https://codemyui.com/simple-button-popup-modal-window/">codemyui.com</a></figcaption>
+        </figure>
+      </section>
+
+      <section id="how">
+        <h2>Hvordan skrive kode?</h2>
+        <p>Du kan skrive kode i TextEdit som allerede finnes på macen din, men for å gjøre det lettere bør du ha en skikkelig kode-editor, et program tilpasset å skrive kode. Det er en rekke ting kode-editorer kan gjøre automatisk, og de ulike editorene som finnes har litt ulik funksjonalitet. En skikkelig kode-editor kjenner igjen hvilke kodespråk du skriver, og gjør koden lettere å lese med bruk av farger og indentering. Prøv deg frem med:</p>
+        <ul>
+          <li><a href="https://code.visualstudio.com/">VS Code</a> (gratis)</li>
+          <li><a href="https://atom.io/">Atom</a> (gratis)</li>
+          <li><a href="https://www.sublimetext.com/">Sublime Text</a> (gratis, men maser jevnlig om at du skal betale lisens)</li>
+        </ul>
+        <p class="important">For nybegynnere pleier jeg å anbefale Sublime Text, fordi det har det enkleste grensesnittet, uten mange elementer å forholde seg til som kan virke forvirrende i starten.</p>
+        <h3>Se koden til en nettside</h3>
+        <p>Hvis du høyreklikker på bakgrunnen til en nettside og trykker "Vis sidekilde" eller tilsvarende, vil du kunne se HTML-koden som denne nettsiden er bygget opp av. Det er riktignok bare en liten del av det store bildet. Hvis du vil se hvordan et element på en nettside er laget, for eksempel hvordan jeg har laget <span class="gradient">denne fete gradienten</span>, kan du høyreklikke på elementet og velge "Inspiser element". Du vil da få opp utviklerverktøyet i nettleseren din som viser både HTML og CSS.<br />Bruker du Safari? Da må du <a href="https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html">slå på utviklerverktøyet</a> i menyen først.</p>
+        <div class="split">
+          <figure>
+            <img src="bilder/inspiser.png" />
+            <figcaption>"Inspiser" lar deg se både HTMLen og CSSen som enkeltelementer på nettsiden er bygget opp av.</figcaption>
+          </figure>
+          <figure>
+            <img src="bilder/sidekilde.png" />
+            <figcaption>"Vis sidekilde" lar deg se HTML-koden som siden du er inne på består av.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="images">
+        <h2>Huskeliste for bilder</h2>
+        <ul>
+          <li>Bruk små bokstaver i filnavn, og unngå mellomrom og ÆØÅ</li>
+          <li>Pass på at ikke bildene er for store
+            <ul>
+              <li>Gjør store bildefiler mindre i Photoshop først</li>
+              <li>Bilder trenger ikke være større enn ca 1900 piksler brede for å dekke hele skjermen</li>
+              <li>Filene bør maks være 1MB hver</li>
             </ul>
-            <div>
-                <h2>Hvilket program bør du bruke for å skrive kode?</h2>
-                <p>Du kan skrive kode i TextEdit som allerede finnes på macen din, men for å gjøre det lettere bør du ha en skikkelig kode-editor, et program tilpasset å skrive kode. Det er en rekke ting kode-editorer kan gjøre automatisk, og de ulike editorene som finnes har litt ulik funksjonalitet. En skikkelig kode-editor kjenner igjen hvilke kodespråk du skriver, og gjør koden lettere å lese med bruk av farger og indentering. Prøv deg frem med:</p>
-                <ul>
-                    <li><a href="https://code.visualstudio.com/">VS Code</a> (gratis)</li>
-                    <li><a href="https://atom.io/">Atom</a> (gratis)</li>
-                    <li><a href="https://www.sublimetext.com/">Sublime Text</a> (gratis, men maser jevnlig om at du skal betale lisens)</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Hvordan se koden til en nettside?</h2>
-                <p>Hvis du høyreklikker på bakgrunnen til en nettside og trykker "Vis sidekilde" eller tilsvarende, vil du kunne se HTML-koden som denne nettsiden er bygget opp av. Det er riktignok bare en liten del av det store bildet. Hvis du vil se hvordan et element på en nettside er laget, for eksempel hvordan jeg har laget <span class="gradient">denne fete gradienten</span>, kan du høyreklikke på elementet og velge "Inspiser element". Du vil da få opp utviklerverktøyet i nettleseren din som viser både HTML og CSS.<br />Bruker du Safari? Da må du <a href="https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html">slå på utviklerverktøyet</a> i menyen først.</p>
-            </div>
-        </main>
-        <footer>
-            <p class="footer">Lyst til å lære å kode? Synes du det er vanskelig å komme i gang på egenhånd? Du er velkommen til å <a href="mailto:hei@elisejakob.no">spørre meg &#9993;</a> om hva som helst! Jeg svarer skikkelig raskt på e-post, og er tilgjengelig for kurs, workshops og foredrag.</a></p>
-        </footer>
-        <div class="triangle"></div>
-    </body>
+        </ul>
+        <blockquote>
+          Legg på no fete filter a
+          <span class="quoteby">Martin Lundell, Tokyo 2013</span>
+        </blockquote>
+      </section>
+      <nav class="bottom-nav">
+        <a class="previous">Forrige</a>
+        <a class="next">Neste</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer>
+    Laget med <span class="heart">&hearts;</span> av <a href="http://elisejakob.no">Elise</a>
+  </footer>
+
+</body>
+
 </html>
