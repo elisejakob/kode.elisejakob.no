@@ -53,6 +53,7 @@
           <ul>
             <li><a href="kapitler/intro.html#html">Farger</a></li>
             <li><a href="kapitler/intro.html#css">Fonter</a></li>
+            <li><a href="kapitler/intro.html#css">Størrelser og avstander</a></li>
             <li><a href="kapitler/intro.html#js">Layout</a></li>
           </ul>
         </li>
@@ -68,6 +69,9 @@
           <ul>
             <li><a href="#">Favicon</a></li>
             <li><a href="#">Video</a></li>
+            <li><a href="#">E-post-lenke</a></li>
+            <li><a href="#">Gjennomsiktighet</a></li>
+            <li><a href="#">Skygger og gradienter</a></li>
             <li><a href="#">Mobiltilpasning</a></li>
           </ul>
         </li>
@@ -82,45 +86,57 @@
 
     <div class="content">
       <section>
+        <h2>Hei!</h2>
         <p class="lead">
-          Hei! Dette er bare en liten guide til hvordan man koder sin første nettside. Du trenger ingen forkunnskaper!
+          Dette er bare en liten guide til hvordan man koder sin første nettside.
         </p>
+        <p>Gjennom guiden lærer du å kode din egen nettside fra bunnen med HTML og CSS. Du trenger ingen forkunnskaper, bare lyst og tålmodighet!</p>
         <a href="kapitler/intro.html" class="shortcut" onclick="alert('Ivrig, hæ? Det kan være ting forklart i introen som du burde få med deg, men du kan jo alltids komme tilbake senere')">Jeg gidder ikke lese introen, hopp rett til det praktiske</a>
-        <p class="important">Jeg vil veldig gjerne ha tilbakemeldinger på ting som ikke funker, ting som er vanskelig forklart, skrivefeil, etc, sånn at jeg kan gjøre denne guiden enda bedre! Send meg gjerne en <a href="mailto:hei@elisejakob.no">mail</a> hvis du oppdager noe jeg burde rette på.</p>
+        <p class="important">Finner du ting som ikke funker, ting som er vanskelig forklart, skrivefeil, etc? Send meg gjerne en <a href="mailto:hei@elisejakob.no">mail</a>, så kan jeg rette opp i det! Denne nettsiden er helt ny og oppdateres fortløpende, så alle tilbakemeldinger mottas med stor takk :)</p>
       </section>
 
       <section>
         <h2>Hvorfor lære å kode?</h2>
         <p class="lead">Utviklere gjør kode, jeg som designer trenger vel ikke det? Må man ikke være god i matte for å kunne kode?</p>
-        <figure>
-          <img src="bilder/first-website-ever.png" />
-          <figcaption><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">Den første nettsiden ever</a> er fortsatt online.</figcaption>
-        </figure>
-        <figure>
-          <img src="bilder/computer.gif" />
-          <figcaption>Nettsider var kulere på 90-tallet. Bare se på <a href="#">Web museum</a>. Jeg har samlet en egen side for <a href="#">inspirasjon</a>.</figcaption>
-        </figure>
+        <p>Å være webdesigner uten å kunne kode er litt som å være klesdesigner å ikke kunne sy, eller bokdesigner og aldri ta i papir. Hvis man kjenner materialet man designer for kan man bedre benytte seg av mulighetene og holde seg innenfor begrensningene.</p>
         <figure>
           <img src="bilder/data.gif" />
-          <figcaption>Nettsider var kulere på 90-tallet. Bare se på <a href="#">Web museum</a>. Jeg har samlet en egen side for <a href="#">inspirasjon</a>.</figcaption>
+          <figcaption>Design for skjerm er en helt annen verden enn den grafisk design tradisjonelt har befunnet seg i. Mediet er helt i startfasen, og det er mange muligheter som ingen har benyttet seg av ennå. Vi som designere kan ikke overlate dette til utviklerne, vi må være med på å forme det visuelle landskapet på skjerm og internett! Mye av webdesign til nå har blitt gjort ved å "sette strøm på papir", det vil si å ta det statiske uttrykket fra design som like gjerne kunne vært lager for trykk, og overføre det til det digitale. Veldig mange nettsider lager ved noen lager et flatt design i for eksempel Illustrator, eksporterer det som en PDF og gir det til en utvikler, som deretter koder akkurat det hun ser. Når man designer for web i slike programmer er det lett å glemme de uendelige mulighetene for interaksjon og animasjon som nettsider tilbyr.</figcaption>
         </figure>
-        <code>
-          <xmp>
-            <body>
-              Hei
-            </body>
-          </xmp>
-        </code>
+        <p class="important">
+          Ikke minst er det sykt kult å kunne realisere sine egne ideer gjennom kode, uten å trenge en utvikler til å gjøre halve jobben!
+        </p>
+        <p>Hvis en nettside ser lik ut når man skriver den ut på papir som når man ser den på skjerm, har man ikke utnyttet mediet godt nok.</p>
+        <figure>
+          <img src="bilder/unique.png" />
+          <figcaption>Altfor mange nettsider ser helt like ut. Du har sikkert sett denne layouten før, kanskje med en liten hamburgermenu (tre streker) oppi hjørnet. Stort bilde i topp, kanskje med litt bevegelse i. En cookie-advarsel som popper opp som du blir tvunget klikke på. Grunnen til at alle nettsider ser sånn her ut er ikke nødvendigvis at det er det lureste. Det er noen late webdesignere som har tenkt "dette funker, trenger ikke finne opp hjulet på nytt". Men jeg mener bestemt at når det kommer til internett har ikke hjulet blitt funnet opp ennå! <em>(Unik nettside stjålet fra <a href="http://www.novolume.co.uk/blog/all-websites-look-the-same/">Novolume.co.uk: All Websites Look the Same</a>)</em></figcaption>
+        </figure>
+        <figure>
+          <img src="bilder/first-website-ever.png" />
+          <figcaption><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">Den første nettsiden ever</a> er fortsatt online. Da World Wide Web ble oppfunnet av Sir Tim Berners Lee i 1989, hadde man ikke andre muligheter enn å lage statiske nettsider med tekst slik som dette, og med såkalte "hyperlenker" for å koble de ulike tekstdokumentene sammen. I dag ser WWW veldig annerledes ut.</figcaption>
+        </figure>
+        <figure>
+          <img src="bilder/webmuseum.png" />
+          <figcaption>Jeg synes nettsider var kulere på 90-tallet, før det fantes etablerte "regler" for webdesign. Bare se på <a href="https://www.webdesignmuseum.org/" target="_blank">Web museum</a>. Jeg har samlet lenker som denne på en egen side for <a href="#">inspirasjon</a> som du kan ta en titt på når du skal designe din egen.</figcaption>
+        </figure>
+        <p>I dag har man mange flere muligheter enn man hadde på 90-tallet, likevel har mange nettsider blitt kjedeligere. Med dagens webteknologi kan man for eksempel ha design og innhold som endrer seg etter hvor stor skjermen er, hva brukeren klikker på eller holder over, og hvilken tid på døgnet det er. Hvor ofte ser du disse mulighetene brukt på kreative måter?</p>
       </section>
 
       <section id="what">
         <h2>Hva er egentlig en nettside?</h2>
-        <p>Fakta om hva en nettside er</p>
+        <p class="lead">En nettside er egentlig bare en mappe med noen filer i. Alt du ser på skjermen, også bildene, består av kodefiler som tolkes av datamaskinen.</p>
         <a href="#video-summary1" class="shortcut" onclick="alert('Bare så du vet det så brukte jeg ganske lang tid på å skrive all denne teksten for din skyld')">Jeg gidder ikke lese, jeg vil heller se en video</a>
         <figure>
           <img src="bilder/filer.png" />
           <figcaption>En nettside er egentlig bare en mappe med filer.</figcaption>
         </figure>
+        <p>Filene med kode gjøres tilgjengelig på internett gjennom en server. En server er egentlig bare en datamaskin som kjører et program for å <em>servere</em> kodefilene til andre datamaskiner som kobler seg til den via internett.</p>
+        <figure>
+          <img src="bilder/server-room.jpg" />
+          <figcaption>Mange ser kanskje for seg sånne svære futuristiske datasentere når de hører ordet "server", men en server kan like gjerne kjøres på din egen datamaskin.</figcaption>
+        </figure>
+        <p>Tilgang til filene får man gjennom et program som <em>leser</em> internett, altså en <strong>nettleser</strong>. Når du åpner nettleseren din, enten det er Safari, Chrome, Firefox, eller noe annet, skriver du inn en adresse (en URL). Når du så klikker enter sendes det en forespørsel til den serveren som adressen peker til, og så sender serveren deg de filene som hører til adressen.</p>
+        <p>En slik adresse kan også kalles et <em>domene</em>. Senere i denne guiden finner du instruksjoner for hvordan du kan kjøpe ditt eget domene og koble kodefilene du skriver til dette, slik at andre kan nå nettsiden din på internett.</p>
         <div id="video-summary1" class="video-summary">
           <h3>Videooppsummering</h3>
           <div class="video">
@@ -130,28 +146,50 @@
         </div>
       </section>
 
+      <section id="languages">
+        <h2>Kodespråk</h2>
+        <p>Det finnes kjempemange kodespråk. Du har sikkert hørt om noen av dem. Koden vi skriver representerer elektriske signaler inni datamaskinen. Gjennom kode gir vi maskinen instruksjoner for hva den skal gjøre, og hva som skal vises på skjermen.</p>
+        <figure>
+          <img src="bilder/kodesprog.png" />
+        </figure>
+        <p>Forskjellige kodespråk brukes til forskjellige ting, noen er for eksempel spesielt egnet til å lage apper, andre til nettsider, noen til tunge abstrakte systemer, og noen til å lage visuelle fremstillinger.</p>
+        <p>Stort sett alt du ser på internett er laget med tre kodespråk:</p>
+        <a href="#html" class="shortcut">HTML</a>
+        <a href="#css" class="shortcut">CSS</a>
+        <a href="#js" class="shortcut">JavaScript</a>
+      </section>
+
       <section id="html">
         <h2>HTML</h2>
-        <p>HTML står for HyperText Markup Language</p>
-        "hyperlenke"
-        "markerer opp" innholdet
-        HTML markerer og beskriver HVA de ulike innholdselementene på siden ER for noe, så nettleseren vet hvordan den skal vise innholdet
-        for eksempel: denne delen av koden er en overskrift, denne delen av koden er en lenke, mens denne delen av koden skal vises som et bilde
-        HTML brukes også til å gi metainformasjon OM nettsiden; hva er tittelen, hvem har laget den
-        vis kildekode
-        motherfuckingwebsite.com
+        <p class="lead">HTML står for HyperText Markup Language. Med HTML definerer du nettsidens struktur, og beskriver hva innholdselementene er.</p>
+        <p>Med HyperText <em>Markup</em> Language <em>markerer</em> du de ulike delene av innholdet. HTML beskriver hva de ulike innholdselementene på siden er for noe, så nettleseren vet hvordan den skal vise innholdetsom standard (med mindre det følger med kode som sier noe annet).</p>
         <code>
           <xmp>
             <h1>
-              Overskrift nivå 1
+              Overskrift nivå 1 (H for heading)
             </h1>
+
+            <p>
+              Tekstavsnitt (P for paragraph)
+            </p>
           </xmp>
         </code>
+        <p>HTML brukes også til å gi metainformasjon om nettsiden, slik som hva tittelen er og hvem som har laget den. Dette leses for eksempel av søkemotorer som Google, men ikke av mennesker som besøker nettsiden.</p>
+        <figure>
+          <img src="bilder/mfwebsite.png" />
+          <figcaption>Man kan helt fint lage fungerende nettsider med bare HTML. Sjekk ut <a href="#">motherfuckingwebsite.com</a> for et godt eksempel.</figcaption>
+        </figure>
+        <div class="section-resources">
+          <h3>Ressurser</h3>
+          <ul>
+            <li><a href="http://www.dontfeartheinternet.com/02-html/" target="_blank">dontfeartheinternet.com</a> har en kort video som forklarer HTML på en skikkelig inn-med-teskje måte</li>
+          </ul>
+        </div>
       </section>
 
       <section id="css">
         <h2>CSS</h2>
-        <p>CSS står for "Cascading Style Sheets". Det funker litt som paragraph styles i InDesign. Selve språket skriver som ganske rett frem engelsk. Man bruker CSS til å gi navn til elementene man har laget i HTML, og deretter til å beskrive hvordan de skal se ut.</p>
+        <p class="lead">CSS står for "Cascading Style Sheets". Med CSS definerer du utseendet til nettsiden.</p>
         <code>
           <xmp>
             h1 {
@@ -160,11 +198,21 @@
             }
           </xmp>
         </code>
+        <p>CSS funker litt som paragraph styles i InDesign. Selve språket skriver som ganske rett frem engelsk; color, font-size, font-family, border, width, etc. Man bruker CSS til å gi navn til elementene man har laget i HTML, og deretter til å beskrive hvordan de skal se ut.</p>
+        <div class="section-resources">
+          <h3>Ressurser</h3>
+          <ul>
+            <li>Sjekk ut <a href="http://csszengarden.com/" target="_blank">http://csszengarden.com/</a> for å se hvor stor effekt ulik CSS har på den samme HTML-fila</li>
+          </ul>
+        </div>
       </section>
 
       <section id="js">
         <h2>JavaScript</h2>
-        <p>JavaScript er det eneste språket av disse tre som er et ekte programmeringsspråk. All interaksjon som ikke bare innebærer å klikke på en lenke for å komme til en ny statisk side, gjøres med JavaScript. JavaScript er ikke en del av dette kurset, men under <a href="#">ressurser</a> kan du finne lenker til JavaScript-tutorials hvis du har lyst til å lære mer om det.</p>
+        <p class="lead">JavaScript er ikke en forkortelse for noe, det har bare et rart navn. Med JavaScript definerer du hva som skal <em>skje</em> på nettsiden, alt det dynamiske og interaktive.</p>
+        <p class="important">JavaScript har forresten ingenting med programmeringsspråket Java å gjøre. Det var noen lure nerder på nittitallet som ga språket navn, ikke spør meg.</p>
+        <p>JavaScript er det eneste språket av disse tre som er et ekte programmeringsspråk. All interaksjon som ikke bare innebærer å klikke på en lenke for å komme til en ny statisk side, gjøres med JavaScript.</p>
+        <p>JavaScript er ikke en del av dette kurset, men under <a href="#">ressurser</a> kan du finne lenker til JavaScript-tutorials hvis du har lyst til å lære mer om det.</p>
         <p>Eksempler på ting man trenger JavaScript til:</p>
         <h3>Pop-ups</h3>
         <figure>
@@ -175,7 +223,8 @@
 
       <section id="how">
         <h2>Hvordan skrive kode?</h2>
-        <p>Du kan skrive kode i TextEdit som allerede finnes på macen din, men for å gjøre det lettere bør du ha en skikkelig kode-editor, et program tilpasset å skrive kode. Det er en rekke ting kode-editorer kan gjøre automatisk, og de ulike editorene som finnes har litt ulik funksjonalitet. En skikkelig kode-editor kjenner igjen hvilke kodespråk du skriver, og gjør koden lettere å lese med bruk av farger og indentering. Prøv deg frem med:</p>
+        <p class="lead">Du kan skrive kode i TextEdit som allerede finnes på macen din, men for å gjøre det lettere bør du ha en skikkelig kode-editor, et program tilpasset å skrive kode.</p>
+        <p>Det er en rekke ting kode-editorer kan gjøre automatisk, og de ulike editorene som finnes har litt ulik funksjonalitet. En skikkelig kode-editor kjenner igjen hvilke kodespråk du skriver, og gjør koden lettere å lese med bruk av farger og indentering. Prøv deg frem med:</p>
         <ul>
           <li><a href="https://code.visualstudio.com/">VS Code</a> (gratis)</li>
           <li><a href="https://atom.io/">Atom</a> (gratis)</li>
@@ -212,6 +261,22 @@
           <span class="quoteby">Martin Lundell, Tokyo 2013</span>
         </blockquote>
       </section>
+
+      <section id="troubleshooting">
+        <h2>Feilsøking</h2>
+        <p class="lead">Når du gjør endringer i koden og nettsiden din ikke ser ut som forventet, sjekk disse tingene:</p>
+        <ul>
+          <li>Har du lagret fila? (CMD + S)</li>
+          <li>Har du åpnet riktig fil/side i nettleseren?</li>
+          <li>Har du husket å lukke alle HTML-taggene dine?</li>
+          <li>Har du husket semikolon etter hver linje CSS?</li>
+        </ul>
+        <blockquote>
+          Legg på no fete filter a
+          <span class="quoteby">Martin Lundell, Tokyo 2013</span>
+        </blockquote>
+      </section>
+
       <nav class="bottom-nav">
         <a class="previous">Forrige</a>
         <a class="next">Neste</a>
