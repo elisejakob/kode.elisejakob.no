@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KODEKURS &hearts; Din første HTML-fil</title>
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+  <header>
+    <h1><a href="../index.html">Kodekurs: Lag din første nettside</a></h1>
+  </header>
+
+  <main>
+    <nav class="table-of-contents">
+      <ul>
+        <li>
+          <a href="intro.html">Intro</a>
+          <ul>
+            <li><a href="intro.html#why">Hvorfor???</a></li>
+            <li><a href="intro.html#what">Hva???</a></li>
+            <li>
+              <a href="intro.html#languages">Kodespråk</a>
+              <ul>
+                <li><a href="intro.html#html">HTML</a></li>
+                <li><a href="intro.html#css">CSS</a></li>
+                <li><a href="intro.html#js">JS</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Hvordan???</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="start.html">Begynn å kode!</a>
+          <ul>
+            <li><a href="#first-html-file">Din første HTML-fil</a></li>
+            <li><a href="#head-body-footer">Head, body og footer</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="intro.html">Innhold</a>
+          <ul>
+            <li><a href="intro.html#html">Tekst</a></li>
+            <li><a href="intro.html#css">Bilder</a></li>
+            <li><a href="intro.html#js">Sider</a></li>
+            <li><a href="intro.html#js">Lenker</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="intro.html">Design</a>
+          <ul>
+            <li><a href="intro.html#html">Farger</a></li>
+            <li><a href="intro.html#css">Fonter</a></li>
+            <li><a href="intro.html#css">Størrelser og avstander</a></li>
+            <li><a href="intro.html#js">Layout</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="intro.html">Publisering</a>
+          <ul>
+            <li><a href="intro.html#html">Domene</a></li>
+            <li><a href="intro.html#css">Server</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">For viderekomne</a>
+          <ul>
+            <li><a href="#">Favicon</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">E-post-lenke</a></li>
+            <li><a href="#">Gjennomsiktighet</a></li>
+            <li><a href="#">Skygger og gradienter</a></li>
+            <li><a href="#">Mobiltilpasning</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="inspirasjon.html">Inspirasjon</a>
+        </li>
+        <li>
+          <a href="ressurser.html">Ressurser</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <section>
+        <h2>Begynn å kode!</h2>
+        <p class="lead">
+          En nettside er egentlig bare en mappe med filer som er gjort tilgjengelig på internett. Din nettside starter i en mappe.
+        </p>
+        <figure>
+          <img src="../bilder/mappe.png" />
+          <figcaption>Opprett en mappe på skrivebordet ditt med et navn som representerer nettsiden din. Du kan kalle den hva du vil, men bruk kun små bokstaver, ikke ÆØÅ, og - eller _ istedenfor mellomrom.</figcaption>
+        </figure>
+        <p class="important">Dette er en fin huskeregel for navngiving av alle filer du skal bruke på nettsiden.</p>
+      </section>
+      <section id="first-html-file">
+        <h2>Din første HTML-fil</h2>
+        <p>Hvis du ikke allerede har lastet ned et program for å skrive kode, gjør det nå! Du kan se forslag til kode-editorer <a href="intro.html#how">i forrige del</a>. I eksemplene i denne guiden kommer jeg til å bruke <a href="https://www.sublimetext.com/">Sublime Text</a>, som er gratis.</p>
+        <figure>
+          <img src="../bilder/sublime-open.png" />
+          <figcaption>Start kodeprogrammet når det er ferdig installert, klikk File &rarr; Open og velg mappen du nettopp opprettet for nettsiden din.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/sublime1.png" />
+          <figcaption>Når du har åpnet mappen skal du se dette ('nettside' vil være navnet du ga mappen).</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/sublime-newfile.png" />
+          <figcaption>Klikk så på File &rarr; New file (eller CMD + N) for å opprette en ny fil.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/sublime-newfileopen.png" />
+          <figcaption>Når du har opprettet en ny fil vil det vises en ny, tom fane i kodeeditor-vinduet, med teksten "untitled".</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/sublime-newfilecontent.png" />
+          <figcaption>Gi filen noe innhold. Dette er kun for å demonstrere, og kan være hva som helst. Vi legger inn ekte kode senere.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/sublime-newfilesave.png" />
+          <figcaption>Klikk deretter File &rarr; Save (eller CMD + S) for å lagre fila i nettsidemappa.</figcaption>
+        </figure>
+        <p>Når nettsiden senere skal gjøres tilgjengelig på internett via en adresse (aka et domene), trenger <a href="intro.html#what">serveren</a> å vite hvilken fil den skal <em>servere</em> først, altså hva som er forsiden. Serveren leter da etter en fil som heter <strong>index.html</strong>. Dette er standard for alle nettsider. "Index" er navnet på forsiden, mens endelsen ".html" sier at det er en HTML-fil.</p>
+        <figure>
+          <img src="../bilder/save-dialog.png" />
+          <figcaption>Pass på at du kaller fila index.html, og at du lagrer den i riktig mappe!</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/sublime-newfilesaved.png" />
+          <figcaption>Når du har lagret fila i riktig mappe vil du se at den dukker opp i kolonnen til venstre.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/open-browser.png" />
+          <figcaption>Nå kan du gå tilbake til skrivebordet og dobbeltklikke på nettsidemappa for å åpne den. Der vil du se index.html-fila du nettopp laget. Den kan du høyreklikke på, og velge din foretrukne nettleser.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/first-website-yay.png" />
+          <figcaption>Gratulerer med å ha laget din første HTML-fil! Om du nå hadde lastet opp denne mappa på en server og koblet den til et domene, for eksempel min-fete-nettside.no, ville de som gikk inn på den adressa sett det samme som du ser her, selv om vi ennå ikke har skrevet noe ekte HTML-kode.</figcaption>
+        </figure>
+      </section>
+
+      <section id="head-body-footer">
+        <h2>Head, body og footer</h2>
+        <p class="lead">Alle HTML-filer starter med samme grunnleggende struktur. Vi må gi info om HTML-dokumentets tittel og språk, markere opp innholdet, og følge visse regler for å være sikker på at fila leses riktig av alle nettlesere.</p>
+        <h3>Aller først!</h3>
+        <p>Å kalle fila for etellerannet.html er ikke nok for å definere hvilken type dokument det er. Det finnes mange ulike nettlesere, og for å være helt sikker på at alle leser fila riktig er det et par kodelinjer som må med i alle HTML-filer. Disse tre linjene sier klart og tydelig fra: HER KOMMER HTML-KODE!</p>
+        <code>
+          <xmp>
+            <!doctype html>
+            <html>
+
+              her kan du begynne å skrive HTML!
+
+            </html>
+          </xmp>
+        </code>
+        <ol>
+          <li>
+            <h3>Head</h3>
+            <p>I HTML-dokumentets "hode" skriver vi metainformasjonen, som sidens tittel, hvilket språk den er skrevet på, etc. Dette kan for eksempel være informasjon som brukes av søkemotorer som Google for å kategorisere innhold og vite når din nettside skal dukke opp.</p>
+            <code>
+              <xmp>
+                <!doctype html>
+                <html>
+    
+                  <head>
+                  </head>
+    
+                </html>
+              </xmp>
+            </code>
+            <p class="important">Det er vanlig å bruke tabs eller 2-4 mellomrom foran linjene for å gjøre det synlig hvilke HTML-elementer som hører til inni hverandre.</p>
+            <p>Sjekk ut <a href="https://www.w3schools.com/html/html_head.asp" target="_blank">denne siden</a> for en nærmere forklaring på hva de ulike HTML-taggene i head kan være og hva de betyr.</li>
+            </p>
+          </li>
+          <li>
+            <h3>Body</h3>
+            <p>I HTML-dokumentets "kropp" ligger alt innholdet som skal være synlig for de som besøker nettsiden.</p>
+            <code>
+              <xmp>
+                <!doctype html>
+                <html>
+    
+                  <head>
+                  </head>
+
+                  <body>
+                    her kommer innholdet!
+                  </body>
+    
+                </html>
+              </xmp>
+            </code>
+            <p class="important">Legg merke til at jeg igjen har lagt inn ekstra mellomrom for å synliggjøre at innholdet hører til mellom body-taggene. Dette ser kanskje litt teit ut nå, men vil hjelpe til å gjøre dokumentet mer oversiktlig når vi får mange linjer med HTML etter hverandre.</p>
+          </li>
+          <li>
+            <h3>Footer</h3>
+            <p>pop</p>
+          </li>
+        </ol>
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="previous">Forrige</a>
+        <a class="next">Neste</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer>
+    Laget med <span class="heart">&hearts;</span> av <a href="http://elisejakob.no">Elise</a>
+  </footer>
+
+</body>
+
+</html>
