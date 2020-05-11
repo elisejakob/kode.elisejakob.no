@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KODEKURS &hearts; Innhold</title>
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+  <header>
+    <h1><a href="../index.html">Kodekurs: Lag din første nettside</a></h1>
+  </header>
+
+  <main>
+    <nav class="table-of-contents">
+      <ul>
+        <li>
+          <a href="intro.html">Intro</a>
+          <ul>
+            <li><a href="intro.html#why">Hvorfor???</a></li>
+            <li><a href="intro.html#what">Hva???</a></li>
+            <li>
+              <a href="intro.html#languages">Kodespråk</a>
+              <ul>
+                <li><a href="intro.html#html">HTML</a></li>
+                <li><a href="intro.html#css">CSS</a></li>
+                <li><a href="intro.html#js">JS</a></li>
+              </ul>
+            </li>
+            <li><a href="intro.html#how">Hvordan???</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="start.html">Begynn å kode!</a>
+          <ul>
+            <li><a href="start.html#first-html-file">Din første HTML-fil</a></li>
+            <li><a href="start.html#html-syntax">HTML-syntaks</a></li>
+            <li><a href="start.html#head-body-footer">Head, body og footer</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="innhold.html">Innhold</a>
+          <ul>
+            <li><a href="innhold.html#text">Tekst</a></li>
+            <li><a href="innhold.html#images">Bilder</a></li>
+            <li><a href="innhold.html#pages">Sider</a></li>
+            <li><a href="innhold.html#links">Lenker</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="design.html">Design</a>
+          <ul>
+            <li><a href="design.html#first-css-file">Din første CSS-fil</a></li>
+            <li><a href="design.html#colors">Farger</a></li>
+            <li><a href="design.html#fonts">Fonter</a></li>
+            <li><a href="design.html#sizes">Størrelser og avstander</a></li>
+            <li><a href="design.html#layout">Layout</a></li>
+            <li><a href="design.html#classes">Navngi elementer</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="publisering.html">Publisering</a>
+          <ul>
+            <li><a href="publisering.html#domene">Domene</a></li>
+            <li><a href="publisering.html#server">Server</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">For viderekomne</a>
+          <ul>
+            <li><a href="#">Favicon</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">E-post-lenke</a></li>
+            <li><a href="#">Gjennomsiktighet</a></li>
+            <li><a href="#">Skygger og gradienter</a></li>
+            <li><a href="#">Mobiltilpasning</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../inspirasjon.html">Inspirasjon</a>
+        </li>
+        <li>
+          <a href="../ressurser.html">Ressurser</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <section>
+        <h2>Design</h2>
+        <p class="lead">All design på nettsider gjøres ved hjelp av CSS.</p>
+      </section>
+
+      <section id="first-css-file">
+        <h2>Din første CSS-fil</h2>
+        <p>Det første du må gjøre er å opprette en ny fil i nettsidemappa som du kan skrive CSS i. Gå til Sublime Text og klikk File &rarr; New File (eller CMD + N). Lagre deretter den nye fila som <strong>style.css</strong></p>
+        <p class="important">Det er samme hva du kaller CSS-fila, så lenge den slutter på .css, men style.css er et veldig vanlig navn å bruke.</p>
+        <figure>
+          <img src="../bilder/first-css-file.png">
+          <figcaption>Husk å lagre fila i riktig mappe.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/sublime-css-file.png">
+          <figcaption>Når du har lagret fila i riktig mappe skal denne også dukke opp i oversikten i Sublime Text. Slik blir det enkelt å skifte mellom CSS- og HTML-filene når du skal jobbe videre med koden.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/skrive-css.png">
+          <figcaption>Nå kan du begynne å skrive CSS!</figcaption>
+        </figure>
+        <p>Forsøk å lime inn denne koden i den nye CSS-fila som eksempel:</p>
+        <code>
+          <xmp>
+            h1 {
+              color: pink;
+              font-size: 20px;
+            }
+          </xmp>
+        </code>
+        <p>Hvis du nå lagrer og går til HTML-fila i nettleseren din, vil du imidlertid se at ingenting har skjedd.</p>
+        <figure>
+          <img src="../bilder/without-css.png">
+          <figcaption>Ingen CSS her!</figcaption>
+        </figure>
+        <p>Dette er fordi du er nødt til å fortelle nettleseren at den skal inkludere koden fra CSS-fila når den leser HTML-fila. Det gjør du ved å legge inn en link til CSS-fila i "head"-taggen i HTML-fila. Når man skal lenke til en CSS-fil gjøres det på en litt annen måte enn om man skal lage en lenke som besøkende kan klikke på.</p>
+        <p>Lim inn denne koden rett før den avsluttende &lt;/head>-taggen:</p>
+        <code>
+          <xmp>
+            <link rel="stylesheet" type="text/css" href="style.css" />
+          </xmp>
+        </code>
+        <p class="important">Bytt eventuelt ut filnavnet "style.css" med det du kalte din CSS-fil.</p>
+        <figure>
+          <img src="../bilder/link-css.png">
+          <figcaption>Slik skal toppen av HTML-fila se ut etter at du har lagt inn link til CSS-fila.</figcaption>
+        </figure>
+        <p>Om du har lagt inn CSS-fila riktig, skal du nå se i nettleseren at overskriften har byttet fontstørrelse og farge!</p>
+        <p class="important">Husk at du må lime inn kodelinja som linker til CSS-fila i alle HTML-filene du lager.</p>
+        <figure>
+          <img src="../bilder/with-css.png">
+          <figcaption>Det var bedre!</figcaption>
+        </figure>
+      </section>
+
+      <section id="colors">
+        <h2>Farger</h2>
+        <p class="lead">Farger kan defineres på flere forskjellige måter i CSS. Du kan bruke et lite utvalg fargenavn, hex-koder, eller RGB, men ikke CMYK.</p>
+      </section>
+
+      <section id="fonts">
+        <h2>Fonter</h2>
+      </section>
+
+      <section id="sizes">
+        <h2>Størrelser og avstander</h2>
+      </section>
+
+      <section id="layout">
+        <h2>Layout</h2>
+      </section>
+
+      <section id="classes">
+        <h2>Navngi elementer</h2>
+        <p class="lead">Man kan skille elementer fra hverandre ved å gi dem navn i HTMLen, for deretter å referere til disse navnene i CSSen. Navnene kalles "klasser".</p>
+        <p>Hvis man for eksempel har to forskjellige bilder, og vil at det ene skal være 300 piksler bredt, mens det andre skal være 500 piksler, kan man gi det ene en klasse, og lage en egen CSS-regel for den klassen.</p>
+        <h3>HTML:</h3>
+        <code>
+          <xmp>
+            <img src="https://kodekurs.netlify.app/bilder/copychu.png">
+            <img src="https://kodekurs.netlify.app/bilder/copychu.png" class="stort-bilde"> 
+          </xmp>
+        </code>
+        <h3>CSS:</h3>
+        <code>
+          <xmp>
+            img {
+              width: 300px;
+            }
+
+            .stort-bilde {
+              width: 500px;
+            }
+          </xmp>
+        </code>
+        <p class="important">På samme måte som når man gir navn til kode- og bildefiler, må også klassenavn i CSS være uten ÆØÅ eller mellomrom.</p>
+      </section>
+
+      <section>
+        <h2>Last ned filene fra dette kapittelet</h2>
+        <a href="../downloads/nettside-2_css.zip" class="shortcut">Last ned .zip</a>
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="previous">Forrige</a>
+        <a class="next">Neste</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer>
+    Laget med <span class="heart">&hearts;</span> av <a href="http://elisejakob.no">Elise</a>
+  </footer>
+
+</body>
+
+</html>
