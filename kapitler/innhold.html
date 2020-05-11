@@ -230,7 +230,41 @@
 
       <section id="links">
         <h2>Lenker</h2>
-        
+        <p class="lead">Når du har laget to eller flere HTML-filer, kan du bruke lenke-elementet i HTML for å koble dem sammen.</p>
+        <code>
+          <xmp>
+            <a href="om-meg.html">Klikk her</a>
+          </xmp>
+        </code>
+        <p>
+          HTML-elementet som markerer lenker er <strong>&lt;a></strong>. "A" står for <em>anchor</em>, litt som et anker inn i et dokument fra et annet. <strong>&lt;a></strong> alene gjør ikke så mye, for man må også fortelle hvor ankeret leder til. Det gjøres ved hjelp av "href", som står for Hypertext Reference, altså en referanse til et annet HyperText Markup Language (HTML)-dokument. På samme måte som da du skrev inn adressen til et bilde, skriver du her inn navnet på fila lenken skal peke til.
+        </p>
+        <p>Hvis du vil ha en lenke som peker til en annen nettside, for eksempel til en blogg du har eller til sosiale medier, kan du kopiere URLen og lime den inn i "href"-feltet. Da er det viktig å ha med hele URLen, også http:// i starten av adressen.</p>
+        <code>
+          <xmp>
+            <a href="https://www.instagram.com/elisejakob/">Følg meg på insta</a>
+            <a href="https://www.vg.no/">Eller bare les VG</a>
+          </xmp>
+        </code>
+        <p class="important">Husk å alltid legge til den avsluttende <strong>&lt;/a></strong>-taggen på slutten av teksten du vil skal være en lenke. Dette er ekstra viktig for lenker, fordi hvis du ikke sier hvor ankeret slutter, vil hele resten av nettsiden bli en lenke.</p>
+        <h3>Bilder som lenker</h3>
+        <p>I eksempelet over er teksten som står mellom A-taggene det som blir lenken man klikker på, men man kan putte hva man vil inn i et A-element. Det kan like gjerne være et bilde! Det gjøres ved å bytte ut teksten inni ankeret med en img-tag, lik den du lærte om over.</p>
+        <code>
+          <xmp>
+            <a href="https://www.vg.no/">
+              <img src="https://kodekurs.netlify.app/bilder/copychu.png"> 
+            </a>
+          </xmp>
+        </code>
+        <p>Klikk på bildet for å gå til VG (men plis kom tilbake!)</p>
+        <a href="https://www.vg.no/">
+          <img src="https://kodekurs.netlify.app/bilder/copychu.png"> 
+        </a>
+      </section>
+
+      <section>
+        <h2>Last ned filene fra dette kapittelet</h2>
+        <a href="../downloads/nettside-1_html.zip" class="shortcut">Last ned .zip</a>
       </section>
 
       <nav class="bottom-nav">
