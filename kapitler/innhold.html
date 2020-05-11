@@ -147,17 +147,47 @@
         </code>
         <p>"src" står for source, og det er her man putter inn filnavnet eller adressen til bildet. Bildet man skal bruke må enten ha en adresse på internett, eller man må skrive inn filnavnet relativt til HTML-fila man vil ha bildet inn i. (Mer om det under!)</p>
         <p>Prøv først å kopiere bildeadressen til bildet under og lime det inn i en "img"-tag i din HTML-fil. Lagre fila og gå til nettleseren og oppdater slik at du får se siste innhold.</p>
-        <img src="../bilder/copychu.png" />
+        <figure>
+          <img src="../bilder/copychu.png" />
+        </figure>
+        <p>Det bør se omtrent slik ut:</p>
         <code>
           <xmp>
-            <img src="filnavn.jpg"> 
+            <img src="https://kodekurs.netlify.app/bilder/copychu.png"> 
           </xmp>
         </code>
-      </section>
-
-      <section id="images">
-        <h2>Huskeliste for bildefiler</h2>
+        <p>Du kan også kopiere bildeadressen til et hvilket som helst bilde på internett på samme måte.</p>
+        <h3>Bilder fra egen mappe</h3>
+        <p>Når du skal lage din egen nettside, vil du neppe bruke bilder kopiert fra nettet, men heller laste opp bilder fra din egen datamaskin. Du kan bruke dine egne bilder i koden ved å legge bildene i samme mappe som "index.html"-fila, og skrive inn filnavnet i "img"-taggen.</p>
+        <figure>
+          <img src="../bilder/image-folder.png" />
+        </figure>
+        <figure>
+          <img src="../bilder/open-image-folder.png" />
+        </figure>
+        <p>Du vil også se at bildemappa med filene i dukker opp i oversikten i Sublime Text:</p>
+        <figure>
+          <img src="../bilder/sublime-image-folder.png" />
+        </figure>
+        <p>Hvis du har fulgt guiden hittil, ser index.html-fila di kanskje ut omtrent som dette:</p>
+        <figure>
+          <img src="../bilder/sublime-before-img-tag.png" />
+        </figure>
+        <p>For å bruke bildene fra denne mappa i koden din, skriver du inn både mappa og filnavnet i img-taggens "src"-felt.</p>
+        <figure>
+          <img src="../bilder/sublime-after-img-tag.png" />
+          <figcaption>Pass på at du skriver riktig mappenavn, at du har skråstrek før filnavnet, at filnavnet er skrevet nøyaktig likt som i bildefila, og at filendelsen er riktig.</figcaption>
+        </figure>
+        <p>Vi skal senere bruke CSS til å endre størrelsen og plasseringen av bildene.</p>
+        <h3>Huskeliste for bildefiler</h3>
         <ul>
+          <li>Bildefiler som funker på nett:
+            <ul>
+              <li>JPG for all type foto, skann og illustrasjoner som ikke er vektor</li>
+              <li>PNG for vektorillustrasjoner, enkle fargeflater, typografi og skjermbilder</li>
+              <li>GIF for enkle animasjoner</li>
+            </ul>
+          </li>
           <li>Bruk små bokstaver i filnavn, og unngå mellomrom og ÆØÅ</li>
           <li>Pass på at ikke bildene er for store
             <ul>
@@ -174,7 +204,28 @@
 
       <section id="pages">
         <h2>Sider</h2>
-        
+        <p class="lead">Én HTML-fil kan være nok for å lage en nettside, men ønsker du å dele opp innholdet i flere sider, er det så enkelt som å lage flere HTML-filer.</p>
+        <p>Mange nettsider består bare av én HTML-fil. Du kan plassere innholdet under hverandre i en scroll, og bruke CSS for å dele inn nettsiden i seksjoner, for eksempel. Veldig ofte er det likevel behov for å gjøre en tydeligere oppdeling av innholdet, og det gjør man ved å dele det opp i flere HTML-filer, som hver representerer én side.</p>
+        <figure>
+          <img src="../bilder/dupliser.png" />
+          <figcaption>For å gjøre det enkelt for meg selv dupliserer jeg bare index.html-fila inne i nettsidemappa og gir den et nytt navn.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/ny-html-fil.png" />
+          <figcaption>Jeg vil ha en egen side med en presentasjon av meg selv &hearts;</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/sublime-ny-html-fil.png" />
+          <figcaption>Denne fila dukker også opp i oversikten i Sublime Text automatisk, og du vil se at innholdet er likt som i index.html.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/endre-om-meg.png" />
+          <figcaption>Jeg endrer tittelen i "head", overskriften og bildet, og legger til et tekstavsnitt med HTML "p"-elementet.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/om-meg-browser.png" />
+          <figcaption>Når jeg åpner den nye HTML-fila i nettleseren, ser innholdet slik ut.</figcaption>
+        </figure>
       </section>
 
       <section id="links">
