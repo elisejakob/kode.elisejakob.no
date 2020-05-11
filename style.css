@@ -13,7 +13,7 @@ html {
   font-family: 'roboto mono', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 
 body {
@@ -272,7 +272,7 @@ figcaption {
 }
 
 /* ------------ resource list ------------ */
-
+/*
 .resources {
   display: flex;
   flex-wrap: wrap;
@@ -286,7 +286,7 @@ figcaption {
   width: 50%;
   min-width: 400px;
   margin-bottom: 60px;
-}
+}*/
 
 .section-resources {
   background: rgba(0, 255, 0, .1);
@@ -346,4 +346,14 @@ figcaption {
 footer {
   padding: 6rem 2rem 2rem;
   border-top: 1px dotted black;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
 }

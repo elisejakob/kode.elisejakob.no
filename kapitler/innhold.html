@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KODEKURS &hearts; Innhold</title>
+  <link rel="icon" href="../favicon.ico">
   <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 
@@ -53,6 +54,7 @@
           <a href="design.html">Design</a>
           <ul>
             <li><a href="design.html#first-css-file">Din første CSS-fil</a></li>
+            <li><a href="design.html#css-syntax">CSS-syntaks</a></li>
             <li><a href="design.html#colors">Farger</a></li>
             <li><a href="design.html#fonts">Fonter</a></li>
             <li><a href="design.html#sizes">Størrelser og avstander</a></li>
@@ -68,14 +70,14 @@
           </ul>
         </li>
         <li>
-          <a href="#">For viderekomne</a>
+          <a href="avansert.html">For viderekomne</a>
           <ul>
-            <li><a href="#">Favicon</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">E-post-lenke</a></li>
-            <li><a href="#">Gjennomsiktighet</a></li>
-            <li><a href="#">Skygger og gradienter</a></li>
-            <li><a href="#">Mobiltilpasning</a></li>
+            <li><a href="avansert.html#favicon">Favicon</a></li>
+            <li><a href="avansert.html#video">Video</a></li>
+            <li><a href="avansert.html#epost">E-post-lenke</a></li>
+            <li><a href="avansert.html#gjennomsiktig">Gjennomsiktighet</a></li>
+            <li><a href="avansert.html#skygger-og-gradienter">Skygger og gradienter</a></li>
+            <li><a href="avansert.html#mobil">Mobiltilpasning</a></li>
           </ul>
         </li>
         <li>
@@ -83,6 +85,9 @@
         </li>
         <li>
           <a href="../ressurser.html">Ressurser</a>
+        </li>
+        <li>
+          <a href="../hjelp.html">Hjelp!</a>
         </li>
       </ul>
     </nav>
@@ -133,11 +138,15 @@
               For eksempel <strong>fet</strong> tekst.
               Eller <em>kursiv</em> tekst.
             </p>
+
+            Hvis du vil ha linjeskift:<br>
+            Kan du skrive<br>
+            br for "break" :)
             
           </xmp>
         </code>
         <p class="important">Husk at mellomrom og linjeskift før/etter tags er et valgfritt virkemiddel for å gjøre koden enklere å lese. Dette er kun for din egen del, for nettleseren ignorerer uansett de ekstra mellomrommene og linjeskiftene når den skal vise fila. Prøv deg frem for å finne ut hva som passer deg best!</p>
-        <p>Det finnes enda flere HTML-elementer for tekst, men det er ikke mange av dem man trenger for å lage en fungerende nettside. Senere vil vi bruke CSS for å gi design til disse tekstelementene og skape mer variasjon!</p>
+        <p>Det finnes enda flere HTML-elementer for tekst, men det er ikke mange av dem man trenger for å lage en fungerende nettside. Senere kan du bruke CSS for å gi design til disse tekstelementene og skape mer variasjon!</p>
       </section>
 
       <section id="images">
@@ -181,8 +190,8 @@
           <img src="../bilder/sublime-after-img-tag.png" />
           <figcaption>Pass på at du skriver riktig mappenavn, at du har skråstrek før filnavnet, at filnavnet er skrevet nøyaktig likt som i bildefila, og at filendelsen er riktig.</figcaption>
         </figure>
-        <p>Vi skal senere bruke CSS til å endre størrelsen og plasseringen av bildene.</p>
-        <h3>Huskeliste for bildefiler</h3>
+        <p>Du kan senere bruke CSS til å endre størrelsen og plasseringen av bildene.</p>
+        <h3 id="huskeliste-for-bilder">Huskeliste for bildefiler</h3>
         <ul>
           <li>Bildefiler som funker på nett:
             <ul>
@@ -270,14 +279,12 @@
         <a href="../downloads/nettside-1_html.zip" class="shortcut">Last ned .zip</a>
       </section>
 
-      <nav class="bottom-nav">
-        <a class="previous">Forrige</a>
-        <a class="next">Neste</a>
-      </nav>
+      
     </div>
   </main>
 
   <footer>
+    <a href="#" class="to-top">Til toppen</a>
     Laget med <span class="heart">&hearts;</span> av <a href="http://elisejakob.no">Elise</a>
   </footer>
 

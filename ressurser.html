@@ -4,69 +4,160 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>kode &hearts; @elisejakob.no</title>
+  <title>KODEKURS &hearts; Ressurser</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  ressurser
-  <a href="../index.html">tilbake</a>
-  <ul class="resources">
-    <li>
-      <h2><a href="http://dontfeartheinternet.com/">Don't fear the internet</a></h2>
-      <p>En samling av korte videoer som tar for seg alt fra hva internett og HTML er, til hvordan man jobber med
-        typografi på web, med behagelig jazz i bakgrunnen.</p>
-    </li>
-    <li>
-      <h2><a href="https://www.codecademy.com/learn/make-a-website">Codecademy: Make a Website</a></h2>
-      <p>Codecademy er en nettside med en rekke interaktive kurs for å lære ulike typer programmeringsspråk. Dette er
-        kurset for deg som vil lære litt av alt det du trenger for å lage en nettside fra bunnen av. Du blir tatt
-        igjennom materialet steg for steg, og kan prøve deg på kode live i en teksteditor på nettsiden. Skikkelig
-        inn-med-teskje!</p>
-    </li>
-    <li>
-      <h2><a href="https://www.superhi.com/">SuperHi</a></h2>
-      <p>Ganske ny, så jeg har ikke prøvd denne selv ennå, men det virker veldig bra! De har både en fysisk bok, og
-        interaktive kurs på nettsiden, og videoer.</p>
-    </li>
-    <li>
-      <h2><a href="https://htmlreference.io/">htmlreference.io</a></h2>
-      <p>Oppslagsverk med eksempler og info om alle HTML-tags som finnes. Tekstelementer, lenker, bilder, video, og
-        alt det andre som er med på å strukturere innholdet på nettsiden.</p>
-    </li>
-    <li>
-      <h2><a href="https://cssreference.io/">cssreference.io</a></h2>
-      <p>Oppslagsverk med eksempler og info om alle CSS-regler som finnes. Farger, fonter, layout, animasjoner, og alt
-        imellom.</p>
-    </li>
-    <li>
-      <h2><a href="https://fonts.google.com/">Google Fonts</a></h2>
-      <p>Gratis fontbibliotek for de som ikke har råd til å kjøpe egne webfonter for å bruke på nettsiden sin. De har
-        også en egen <a href="https://developers.google.com/fonts/docs/getting_started">guide</a> til hvordan du
-        bruker fontene i koden din.</p>
-    </li>
-    <li>
-      <h2><a href="https://codepen.io/">Codepen</a></h2>
-      <p>Nettside som lar deg jobbe med små kodeeksperimenter rett i nettleseren. Hvis du kun skal prøve ut noe, og
-        ikke vil opprette en egen mappe med filer på din egen datamaskin, kan du bruke codepen til å teste ting raskt.
-        Du kan også se kule ting andre har laget med verktøyet.</p>
-    </li>
-    <li>
-      <h2><a href="https://caniuse.com/">Can I use &hellip; ?</a></h2>
-      <p>Oppslagsverk for å finne ut av hvilke nettlesere som støtter de nye greiene som lages i de ulike
-        kodespråkene. Her får man også tall på hvor utbredt bruken av hver nettleser er.</p>
-    </li>
-  </ul>
-  https://javascript.info/intro<br />
-  https://learn.shayhowe.com/html-css/building-your-first-web-page/<br />
-  https://htmldog.com/guides/html/beginner/<br />
+  <header>
+    <h1><a href="../index.html">Kodekurs: Lag din første nettside</a></h1>
+  </header>
 
-  <br />
-  https://cargo.site/<br />
+  <main>
+    <nav class="table-of-contents">
+      <ul>
+        <li>
+          <a href="kapitler/intro.html">Intro</a>
+          <ul>
+            <li><a href="kapitler/intro.html#why">Hvorfor???</a></li>
+            <li><a href="kapitler/intro.html#what">Hva???</a></li>
+            <li>
+              <a href="kapitler/intro.html#languages">Kodespråk</a>
+              <ul>
+                <li><a href="kapitler/intro.html#html">HTML</a></li>
+                <li><a href="kapitler/intro.html#css">CSS</a></li>
+                <li><a href="kapitler/intro.html#js">JS</a></li>
+              </ul>
+            </li>
+            <li><a href="kapitler/intro.html#how">Hvordan???</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/start.html">Begynn å kode!</a>
+          <ul>
+            <li><a href="kapitler/start.html#first-html-file">Din første HTML-fil</a></li>
+            <li><a href="kapitler/start.html#html-syntax">HTML-syntaks</a></li>
+            <li><a href="kapitler/start.html#head-body-footer">Head, body og footer</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/innhold.html">Innhold</a>
+          <ul>
+            <li><a href="kapitler/innhold.html#text">Tekst</a></li>
+            <li><a href="kapitler/innhold.html#images">Bilder</a></li>
+            <li><a href="kapitler/innhold.html#pages">Sider</a></li>
+            <li><a href="kapitler/innhold.html#links">Lenker</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/design.html">Design</a>
+          <ul>
+            <li><a href="kapitler/design.html#first-css-file">Din første CSS-fil</a></li>
+            <li><a href="kapitler/design.html#css-syntax">CSS-syntaks</a></li>
+            <li><a href="kapitler/design.html#colors">Farger</a></li>
+            <li><a href="kapitler/design.html#fonts">Fonter</a></li>
+            <li><a href="kapitler/design.html#sizes">Størrelser og avstander</a></li>
+            <li><a href="kapitler/design.html#classes">Navngi elementer</a></li>
+            <li><a href="kapitler/design.html#layout">Layout</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/publisering.html">Publisering</a>
+          <ul>
+            <li><a href="kapitler/publisering.html#domene">Domene</a></li>
+            <li><a href="kapitler/publisering.html#server">Server</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/avansert.html">For viderekomne</a>
+          <ul>
+            <li><a href="kapitler/avansert.html#favicon">Favicon</a></li>
+            <li><a href="kapitler/avansert.html#video">Video</a></li>
+            <li><a href="kapitler/avansert.html#epost">E-post-lenke</a></li>
+            <li><a href="kapitler/avansert.html#gjennomsiktig">Gjennomsiktighet</a></li>
+            <li><a href="kapitler/avansert.html#skygger-og-gradienter">Skygger og gradienter</a></li>
+            <li><a href="kapitler/avansert.html#mobil">Mobiltilpasning</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="inspirasjon.html">Inspirasjon</a>
+        </li>
+        <li>
+          <a href="ressurser.html">Ressurser</a>
+        </li>
+        <li>
+          <a href="hjelp.html">Hjelp!</a>
+        </li>
+      </ul>
+    </nav>
 
-  <br />
-  https://icoconvert.com/<br />
+    <div class="content">
+      <section>
+        <h2>Ressurser</h2>
+        <ul class="resources">
+          <li>
+            <h3><a href="http://dontfeartheinternet.com/">Don't fear the internet</a></h3>
+            <p>En samling av korte videoer som tar for seg alt fra hva internett og HTML er, til hvordan man jobber med
+              typografi på web, med behagelig jazz i bakgrunnen.</p>
+          </li>
+          <li>
+            <h3><a href="https://www.codecademy.com/learn/make-a-website">Codecademy: Make a Website</a></h3>
+            <p>Codecademy er en nettside med en rekke interaktive kurs for å lære ulike typer programmeringsspråk. Dette er
+              kurset for deg som vil lære litt av alt det du trenger for å lage en nettside fra bunnen av. Du blir tatt
+              igjennom materialet steg for steg, og kan prøve deg på kode live i en teksteditor på nettsiden. Skikkelig
+              inn-med-teskje!</p>
+          </li>
+          <li>
+            <h3><a href="https://www.superhi.com/">SuperHi</a></h3>
+            <p>Jeg har ikke prøvd denne selv ennå, men det virker veldig bra! De har både en fysisk bok, og
+              interaktive kurs på nettsiden, og videoer.</p>
+          </li>
+          <li>
+            <h3><a href="https://htmlreference.io/">htmlreference.io</a></h3>
+            <p>Oppslagsverk med eksempler og info om alle HTML-tags som finnes. Tekstelementer, lenker, bilder, video, og
+              alt det andre som er med på å strukturere innholdet på nettsiden.</p>
+          </li>
+          <li>
+            <h3><a href="https://cssreference.io/">cssreference.io</a></h3>
+            <p>Oppslagsverk med eksempler og info om alle CSS-regler som finnes. Farger, fonter, layout, animasjoner, og alt
+              imellom.</p>
+          </li>
+          <li>
+            <h3><a href="https://fonts.google.com/">Google Fonts</a></h3>
+            <p>Gratis fontbibliotek med webfonter til å bruke på nettsiden din. De har
+              også en egen <a href="https://developers.google.com/fonts/docs/getting_started">guide</a> til hvordan du
+              bruker fontene i koden din.</p>
+          </li>
+          <li>
+            <h3><a href="https://codepen.io/">Codepen</a></h3>
+            <p>Nettside som lar deg jobbe med små kodeeksperimenter rett i nettleseren. Hvis du kun skal prøve ut noe, og
+              ikke vil opprette en egen mappe med filer på din egen datamaskin, kan du bruke codepen til å teste ting raskt.
+              Du kan også se kule ting andre har laget med verktøyet.</p>
+          </li>
+          <li>
+            <h3><a href="https://caniuse.com/">Can I use &hellip; ?</a></h3>
+            <p>Oppslagsverk for å finne ut av hvilke nettlesere som støtter de nye greiene som lages i de ulike
+              kodespråkene. Her får man også tall på hvor utbredt bruken av hver nettleser er.</p>
+          </li>
+        </ul>
+        https://javascript.info/intro<br />
+        https://learn.shayhowe.com/html-css/building-your-first-web-page/<br />
+        https://htmldog.com/guides/html/beginner/<br />
+      
+        <br />
+        https://cargo.site/<br />
+      
+        <br />
+        https://icoconvert.com/<br />
+      </section>
+    </div>
+  </main>
 
+  <footer>
+    <a href="#" class="to-top">Til toppen</a>
+    Laget med <span class="heart">&hearts;</span> av <a href="http://elisejakob.no">Elise</a>
+  </footer>
 
 </body>
 

@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KODEKURS &hearts; Hjelp!</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">Kodekurs: Lag din første nettside</a></h1>
+  </header>
+
+  <main>
+    <nav class="table-of-contents">
+      <ul>
+        <li>
+          <a href="kapitler/intro.html">Intro</a>
+          <ul>
+            <li><a href="kapitler/intro.html#why">Hvorfor???</a></li>
+            <li><a href="kapitler/intro.html#what">Hva???</a></li>
+            <li>
+              <a href="kapitler/intro.html#languages">Kodespråk</a>
+              <ul>
+                <li><a href="kapitler/intro.html#html">HTML</a></li>
+                <li><a href="kapitler/intro.html#css">CSS</a></li>
+                <li><a href="kapitler/intro.html#js">JS</a></li>
+              </ul>
+            </li>
+            <li><a href="kapitler/intro.html#how">Hvordan???</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/start.html">Begynn å kode!</a>
+          <ul>
+            <li><a href="kapitler/start.html#first-html-file">Din første HTML-fil</a></li>
+            <li><a href="kapitler/start.html#html-syntax">HTML-syntaks</a></li>
+            <li><a href="kapitler/start.html#head-body-footer">Head, body og footer</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/innhold.html">Innhold</a>
+          <ul>
+            <li><a href="kapitler/innhold.html#text">Tekst</a></li>
+            <li><a href="kapitler/innhold.html#images">Bilder</a></li>
+            <li><a href="kapitler/innhold.html#pages">Sider</a></li>
+            <li><a href="kapitler/innhold.html#links">Lenker</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/design.html">Design</a>
+          <ul>
+            <li><a href="kapitler/design.html#first-css-file">Din første CSS-fil</a></li>
+            <li><a href="kapitler/design.html#css-syntax">CSS-syntaks</a></li>
+            <li><a href="kapitler/design.html#colors">Farger</a></li>
+            <li><a href="kapitler/design.html#fonts">Fonter</a></li>
+            <li><a href="kapitler/design.html#sizes">Størrelser og avstander</a></li>
+            <li><a href="kapitler/design.html#classes">Navngi elementer</a></li>
+            <li><a href="kapitler/design.html#layout">Layout</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/publisering.html">Publisering</a>
+          <ul>
+            <li><a href="kapitler/publisering.html#domene">Domene</a></li>
+            <li><a href="kapitler/publisering.html#server">Server</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kapitler/avansert.html">For viderekomne</a>
+          <ul>
+            <li><a href="kapitler/avansert.html#favicon">Favicon</a></li>
+            <li><a href="kapitler/avansert.html#video">Video</a></li>
+            <li><a href="kapitler/avansert.html#epost">E-post-lenke</a></li>
+            <li><a href="kapitler/avansert.html#gjennomsiktig">Gjennomsiktighet</a></li>
+            <li><a href="kapitler/avansert.html#skygger-og-gradienter">Skygger og gradienter</a></li>
+            <li><a href="kapitler/avansert.html#mobil">Mobiltilpasning</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="inspirasjon.html">Inspirasjon</a>
+        </li>
+        <li>
+          <a href="ressurser.html">Ressurser</a>
+        </li>
+        <li>
+          <a href="hjelp.html">Hjelp!</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <section>
+        <h2>Feilsøking</h2>
+        <p class="lead">Når du gjør endringer i koden og nettsiden din ikke ser ut som forventet, sjekk disse tingene:</p>
+        <ul>
+          <li>Har du lagret fila? (CMD + S)</li>
+          <li>Har du åpnet riktig fil/side i nettleseren?</li>
+          <li>Har du husket å lukke alle HTML-taggene dine?</li>
+          <li>Har du husket semikolon etter hver linje CSS?</li>
+        </ul>
+        <figure>
+          <img src="bilder/notfound.png" width="200" />
+        </figure>
+        <h3>Andre problemer</h3>
+        <ul>
+          <li>
+            <h4>Bildene mine dukker ikke opp!</h4>
+            <ul>
+              <li>
+                Er du sikker på at du har skrevet filnavnene riktig? Dobbeltsjekk at navngivingen følger retningslinjene i bunnen av <a href="kapitler/innhold.html#huskeliste-for-bilder" target="_blank">seksjonen om bilder</a>. Pass også på at du har riktig filendelse, og merk deg forskjellen mellom JPG og JPEG!
+              </li>
+              <li>
+                Ligger bildene i samme mappe som HTML-fila du forsøker å hente de inn i? Måten du skriver inn mappe- og filnavnet til bildet avhenger av hvor bildet ligger i forhold til HTML-fila.
+                <ul>
+                  <li>
+                    <strong>Bildet ligger i samme mappe</strong>
+                    <p>Hvis bildet ligger i samme mappe som HTML-fila, trenger du kun å skrive filnavnet og filendelsen. Ikke noe mappenavn, ingen skråstrek.</p>
+    <code>
+      <xmp>
+        <img src="filnavn.jpg"> 
+      </xmp>
+    </code>
+                  </li>
+                  <li>
+                    <strong>Bildet ligger i en egen mappe</strong>
+                    <p>Hvis bildemappa ligger i samme mappe som HTML-fila, må du skrive navnet på bildemappa først, deretter filnavnet og filendelsen.</p>
+    <code>
+      <xmp>
+        <img src="mappenavn/filnavn.jpg"> 
+      </xmp>
+    </code>
+                    <p>Hvis bildemappa ligger i en annen mappe enn HTML-fila, bør du flytte den så alt ligger i en samlet mappe for nettsiden.</p>
+                  </li>
+                  <li>
+                    <strong>HTML-fila ligger i en annen mappe</strong>
+                    <p>Hvis HTML-fila ligger inne i en mappe inne i nettsidemappa, og bildemappa ligger ett "nivå" over, må du indikere at den skal lete etter bildet i en mappe ett nivå opp. Det gjør du med to punktum, slik:</p>
+    <code>
+      <xmp>
+        <img src="../mappenavn/filnavn.jpg"> 
+      </xmp>
+    </code>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Lenkene mine funker ikke!</h4>
+            <ul>
+              <li>
+                Er du sikker på at du har skrevet filnavnene riktig?
+              </li>
+              <li>
+                Måten du skriver inn navnet på HTML-fila du skal lenke til avhenger av hvor den ligger i forhold til HTML-fila du linker fra.
+                <ul>
+                  <li>
+                    <strong>Filene ligger i samme mappe</strong>
+                    <p>Hvis filene ligger i samme mappe, trenger du kun å skrive navnet.</p>
+    <code>
+      <xmp>
+        <a href="filnavn.html"> 
+      </xmp>
+    </code>
+                  </li>
+                  <li>
+                    <strong>Filen jeg lenker til ligger i en egen mappe</strong>
+                    <p>Hvis filen du lenker <strong>til</strong> ligger inne i en mappe i samme mappe som HTML-fila, må du skrive navnet på mappa først, deretter filnavnet.</p>
+    <code>
+      <xmp>
+        <a href="mappenavn/filnavn.html"> 
+      </xmp>
+    </code>
+                  </li>
+                  <li>
+                    <strong>Filen jeg lenker fra ligger i en egen mappe</strong>
+                    <p>Hvis HTML-fila du lenker <strong>fra</strong> ligger inne i en mappe inne i nettsidemappa, og bildemappa ligger ett "nivå" over, må du indikere at den skal lete etter bildet i en mappe ett nivå opp. Det gjør du med to punktum, slik:</p>
+    <code>
+      <xmp>
+        <a href="../filnavn.html"> 
+      </xmp>
+    </code>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#" class="to-top">Til toppen</a>
+    Laget med <span class="heart">&hearts;</span> av <a href="http://elisejakob.no">Elise</a>
+  </footer>
+
+</body>
+
+</html>
