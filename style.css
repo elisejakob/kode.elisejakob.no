@@ -98,7 +98,7 @@ p {
   left: -1rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   font-family: 'roboto', sans-serif;
   font-weight: 900;
@@ -115,6 +115,14 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1000px) {
@@ -203,6 +211,7 @@ code {
   background: rgba(0, 0, 255, .1);
   border: 1px dashed rgba(0, 0, 0, .1);
   margin: 2rem auto;
+  overflow-X: auto;
 }
 
 figure {
@@ -255,6 +264,10 @@ figcaption {
 .shortcut:hover {
   color: lime;
   border-color: lime;
+}
+
+.top-shortcut {
+  margin-bottom: 0;
 }
 
 /* ------------ resource list ------------ */

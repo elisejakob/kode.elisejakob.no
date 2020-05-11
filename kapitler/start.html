@@ -2,10 +2,10 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KODEKURS &hearts; Din første HTML-fil</title>
-  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
@@ -36,6 +36,7 @@
           <a href="start.html">Begynn å kode!</a>
           <ul>
             <li><a href="#first-html-file">Din første HTML-fil</a></li>
+            <li><a href="#html-syntax">HTML-syntaks</a></li>
             <li><a href="#head-body-footer">Head, body og footer</a></li>
           </ul>
         </li>
@@ -142,6 +143,29 @@
         </figure>
       </section>
 
+      <section id="html-syntax">
+        <h2>HTML-syntaks</h2>
+        <p class="lead">Datamaskiner er skikkelig dumme. De vet ikke noe mer enn det vi forteller dem gjennom kode, og følger blindt våre instruksjoner.</p>
+        <p>Hvis vi har én liten feil i koden, kan det ødelegge hele visningen av nettsidefila. Derfor er det viktig å alltid følge reglene for hvordan kode skal skrives.</p>
+        <h3>HTML-tagger</h3>
+        <p>All HTML-kode består av såkalte "tagger". De består av tegnene <strong>&lt;</strong>, <strong>></strong> og <strong>/</strong> i sammenheng med ulike navn HTML-språket har for innholdselementer. Disse navnene kommer vi tilbake til senere, men noen eksempler er <strong>h1</strong> for overskrift nivå 1 (heading), <strong>p</strong> for tekstavsnitt (paragraph), og <strong>img</strong> for bilder.</p>
+        <code>
+          <xmp>
+            <tagnavn>
+              Innholdet kommer her!
+            </tagnavn>
+          </xmp>
+        </code>
+        <p>Et HTML-element må alltid "lukkes" med en tilsvarende tag som den elementet starter med, bare med en skråstrek i tillegg som forteller at det er en avslutning. Som i all språklig grammatikk finnes det noen unntak, men det kommer vi tilbake til!</p>
+        <p>Mellomrom, linjeskift og indentering i koden kan hjelpe til å gjøre den enklere å lese. Det er det samme hvordan du velger å bruke dette, for nettleseren ignorerer de ekstra mellomrommene og linjeskiftene når den skal vise fila.</p>
+        <div class="section-resources">
+          <h3>Ressurser</h3>
+          <ul>
+            <li><a href="http://www.dontfeartheinternet.com/02-html/" target="_blank">dontfeartheinternet.com</a> har en kort video som forklarer HTML-syntaks på en skikkelig inn-med-teskje måte</li>
+          </ul>
+        </div>
+      </section>
+
       <section id="head-body-footer">
         <h2>Head, body og footer</h2>
         <p class="lead">Alle HTML-filer starter med samme grunnleggende struktur. Vi må gi info om HTML-dokumentets tittel og språk, markere opp innholdet, og følge visse regler for å være sikker på at fila leses riktig av alle nettlesere.</p>
@@ -173,6 +197,44 @@
               </xmp>
             </code>
             <p class="important">Det er vanlig å bruke tabs eller 2-4 mellomrom foran linjene for å gjøre det synlig hvilke HTML-elementer som hører til inni hverandre.</p>
+            <h4>Disse linjene trenger du i Head-taggen</h4>
+            <ol>
+              <li>
+                <h5>Tittel</h5>
+                <code>
+                  <xmp>
+                    <title>Min fete nettside</title>
+                  </xmp>
+                </code>
+                <figure>
+                  <img src="../bilder/htmltittel.png" />
+                  <figcaption>Tittelen er navnet på siden, og vil dukke opp i faner i nettleseren, om noen lagrer nettsiden som bokmerke, og når den dukker opp som søkeresultat i Google. Alle HTML-dokumenter må ha en tittel.</figcaption>
+                </figure>
+              </li>
+              <li>
+                <h5>Karaktersett</h5>
+                <code>
+                  <xmp>
+                    <meta charset="utf-8">
+                  </xmp>
+                </code>
+                <p class="caption">Dette er den eneste meta-taggen vi absolutt MÅ ha. Den definerer hvilket karaktersett som skal brukes for å lese fila. Enkelt forklart fungerer karaktersettet litt som en ordbok. Datamaskiner forstår som du kanskje vet bare tegnene 0 og 1, eller rettere sagt de elektriske signalene av og på, men det er sinnssykt tidkrevende og kjedelig for et menneske å skulle skrive kode med kun 0 og 1 tilsvarende der man ønsker at datamaskinen skal gjøre. Derfor har vi utviklet kodespråk som lar oss skrive noe som ligner mer på engelsk, som deretter oversettes til 0 og 1 eller av/på inni datamaskinen. Karaktersett definerer <em>hvordan</em> koden skal oversettes. Litt som en ordbok, altså. En grundigere forklaring av karaktersett og akkurat UTF-8 finner du <a href="https://www.reddit.com/r/explainlikeimfive/comments/2a3tik/eli5_can_someone_explain_character_encoding_to_me/cir8afk?utm_source=share&utm_medium=web2x" target="_blank">her på Reddit/r/ELI5</a>.</p>
+              </li>
+            </ol>
+            <h4>Slik skal HTML-dokumentet nå se ut:</h4>
+            <code>
+              <xmp>
+                <!doctype html>
+                <html>
+    
+                  <head>
+                    <meta charset="utf-8">
+                    <title>Min fete nettside</title>
+                  </head>
+    
+                </html>
+              </xmp>
+            </code>
             <p>Sjekk ut <a href="https://www.w3schools.com/html/html_head.asp" target="_blank">denne siden</a> for en nærmere forklaring på hva de ulike HTML-taggene i head kan være og hva de betyr.</li>
             </p>
           </li>
@@ -198,9 +260,49 @@
           </li>
           <li>
             <h3>Footer</h3>
-            <p>pop</p>
+            <p>HTML-dokumentets "fot" er en del av "kroppen", altså ligger inni body-taggen. Footer er et <strong>valgfritt</strong> element, men brukes ofte som en gjentagende komponent i bunnen på alle sider, der man finner for eksempel kontaktinfo, adresse, og lenker til sosiale medier.</p>
+            <code>
+              <xmp>
+                <!doctype html>
+                <html>
+
+                  <body>
+                    her kommer innholdet!
+    
+                    <footer>
+                      her ligger det noe greier i bunnen av siden
+                    </footer>
+                  </body>
+    
+                </html>
+              </xmp>
+            </code>
           </li>
         </ol>
+        <h3>Slik ser HTML-dokumentet ut med alle de tre elementene:</h3>
+        <code>
+          <xmp>
+            <!doctype html>
+            <html>
+
+              <head>
+                <meta charset="utf-8">
+                <title>Min fete nettside</title>
+              </head>
+
+              <body>
+                jeg har masse innhold bare gidder ikke legge det inn ennå
+
+                <footer>
+                  men send meg mail og følg meg på insta
+                </footer>
+              </body>
+
+            </html>
+          </xmp>
+        </code>
+        <p class="caption">Det er helt i orden om du vil kopiere denne koden og bruke det som starten på din første HTML-fil.</p>
+        <p>Nå er du klar for å fylle HTML-fila med innhold!</p>
       </section>
 
       <nav class="bottom-nav">

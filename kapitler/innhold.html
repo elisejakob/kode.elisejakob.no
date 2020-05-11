@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KODEKURS &hearts; Innhold</title>
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+
+<body>
+  <header>
+    <h1><a href="../index.html">Kodekurs: Lag din første nettside</a></h1>
+  </header>
+
+  <main>
+    <nav class="table-of-contents">
+      <ul>
+        <li>
+          <a href="intro.html">Intro</a>
+          <ul>
+            <li><a href="#why">Hvorfor???</a></li>
+            <li><a href="#what">Hva???</a></li>
+            <li>
+              <a href="#languages">Kodespråk</a>
+              <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JS</a></li>
+              </ul>
+            </li>
+            <li><a href="#how">Hvordan???</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="start.html">Din første HTML-fil</a>
+          <ul>
+            <li><a href="#">Mappe og filnavn</a></li>
+            <li><a href="#">Head, body og footer</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="intro.html">Innhold</a>
+          <ul>
+            <li><a href="#text">Tekst</a></li>
+            <li><a href="#images">Bilder</a></li>
+            <li><a href="#pages">Sider</a></li>
+            <li><a href="#links">Lenker</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="intro.html">Design</a>
+          <ul>
+            <li><a href="intro.html#html">Farger</a></li>
+            <li><a href="intro.html#css">Fonter</a></li>
+            <li><a href="intro.html#css">Størrelser og avstander</a></li>
+            <li><a href="intro.html#js">Layout</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="intro.html">Publisering</a>
+          <ul>
+            <li><a href="intro.html#html">Domene</a></li>
+            <li><a href="intro.html#css">Server</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">For viderekomne</a>
+          <ul>
+            <li><a href="#">Favicon</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">E-post-lenke</a></li>
+            <li><a href="#">Gjennomsiktighet</a></li>
+            <li><a href="#">Skygger og gradienter</a></li>
+            <li><a href="#">Mobiltilpasning</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../inspirasjon.html">Inspirasjon</a>
+        </li>
+        <li>
+          <a href="../ressurser.html">Ressurser</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <section>
+        <h2>Innhold</h2>
+      </section>
+
+      <section id="text">
+        <h2>Tekst</h2>
+        <p class="lead">I HTML har man forskjellige elementer for å definere de ulike delene av teksten på nettsiden.</p>
+        <p>Prøv deg frem med disse! Du kan kopiere og lime de inn i HTML-fila di, lagre den, og så gå til nettleseren og oppdatere siden for å se de siste endringene.</p>
+        <p class="caption">Nettleseren tolker HTML-elementene og gir dem en egen styling basert på hva slags type tekstelement det er. Alle nettlesere har en standard styling for hvordan HTML-elementer vises. Denne kan være litt forskjellig fra nettleser til nettleser. Sjekk for eksempel om du kan se forskjeller i hvordan fila vises i Safari versus i Chrome eller Firefox.</p>
+        <p class="important">
+          Du kan endre denne stylingen senere ved hjelp av CSS!
+        </p>
+        <code>
+          <xmp>
+            <h1>Overskrift nivå 1 (H for heading)</h1>
+
+
+            <h2>Overskrift nivå 2</h2>
+
+
+            <p>Dette er et tekstavsnitt (P for paragraph).</p>
+
+
+            <h6>Overskrift nivå 6, laveste nivå</h6>
+
+
+            <ul>
+              <li>UL står for "unordered list"</li>
+              <li>LI står for "list element"</li>
+              <li>LI hører alltid til inne i UL, altså mellom to UL-tagger</li>
+              <li>Du kan ha så mange listeelementer du vil</li>
+              <li>Se hva som skjer hvis du endrer "UL" til "OL"!</li>
+              <li>Skjønner du hva OL står for?</li>
+            </ul>
+
+
+            <em>Dette er tekst med EMphasis, vanligvis satt i kursiv.</em>
+            <em>Dette er STERK tekst, vanligvis satt i bold.</em>
+
+
+            <p>
+              Tekstavsnitt-elementet P kan kombineres med andre HTML-elementer.
+              For eksempel <strong>fet</strong> tekst.
+              Eller <em>kursiv</em> tekst.
+            </p>
+            
+          </xmp>
+        </code>
+        <p class="important">Husk at mellomrom og linjeskift før/etter tags er et valgfritt virkemiddel for å gjøre koden enklere å lese. Dette er kun for din egen del, for nettleseren ignorerer uansett de ekstra mellomrommene og linjeskiftene når den skal vise fila. Prøv deg frem for å finne ut hva som passer deg best!</p>
+        <p>Det finnes enda flere HTML-elementer for tekst, men det er ikke mange av dem man trenger for å lage en fungerende nettside. Senere vil vi bruke CSS for å gi design til disse tekstelementene og skape mer variasjon!</p>
+      </section>
+
+      <section id="images">
+        <h2>Bilder</h2>
+        <p class="lead">HTML-koden for bilder er ganske enkel, så lenge man sørger for å ha filene på riktig sted.</p>
+        <code>
+          <xmp>
+            <img src="filnavn.jpg"> 
+          </xmp>
+        </code>
+        <p>"src" står for source, og det er her man putter inn filnavnet eller adressen til bildet. Bildet man skal bruke må enten ha en adresse på internett, eller man må skrive inn filnavnet relativt til HTML-fila man vil ha bildet inn i. (Mer om det under!)</p>
+        <p>Prøv først å kopiere bildeadressen til bildet under og lime det inn i en "img"-tag i din HTML-fil. Lagre fila og gå til nettleseren og oppdater slik at du får se siste innhold.</p>
+        <img src="../bilder/copychu.png" />
+        <code>
+          <xmp>
+            <img src="filnavn.jpg"> 
+          </xmp>
+        </code>
+      </section>
+
+      <section id="images">
+        <h2>Huskeliste for bildefiler</h2>
+        <ul>
+          <li>Bruk små bokstaver i filnavn, og unngå mellomrom og ÆØÅ</li>
+          <li>Pass på at ikke bildene er for store
+            <ul>
+              <li>Gjør store bildefiler mindre i Photoshop først</li>
+              <li>Bilder trenger ikke være større enn ca 1900 piksler brede for å dekke hele skjermen</li>
+              <li>Filene bør maks være 1MB hver</li>
+            </ul>
+        </ul>
+        <blockquote>
+          Legg på no fete filter a
+          <span class="quoteby">Martin Lundell, Tokyo 2013</span>
+        </blockquote>
+      </section>
+
+      <section id="pages">
+        <h2>Sider</h2>
+        
+      </section>
+
+      <section id="links">
+        <h2>Lenker</h2>
+        
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="previous">Forrige</a>
+        <a class="next">Neste</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer>
+    Laget med <span class="heart">&hearts;</span> av <a href="http://elisejakob.no">Elise</a>
+  </footer>
+
+</body>
+
+</html>
