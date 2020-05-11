@@ -311,6 +311,19 @@ figcaption {
   font-weight: bold;
 }
 
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.lime {
+  color: lime;
+}
+.gold {
+  color: gold;
+}
+
 /* ------------ footer ------------ */
 
 .bottom-nav {

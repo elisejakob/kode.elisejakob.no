@@ -56,8 +56,8 @@
             <li><a href="design.html#colors">Farger</a></li>
             <li><a href="design.html#fonts">Fonter</a></li>
             <li><a href="design.html#sizes">Størrelser og avstander</a></li>
-            <li><a href="design.html#layout">Layout</a></li>
             <li><a href="design.html#classes">Navngi elementer</a></li>
+            <li><a href="design.html#layout">Layout</a></li>
           </ul>
         </li>
         <li>
@@ -90,7 +90,6 @@
     <div class="content">
       <section>
         <h2>Design</h2>
-        <p class="lead">All design på nettsider gjøres ved hjelp av CSS.</p>
       </section>
 
       <section id="first-css-file">
@@ -141,11 +140,53 @@
           <img src="../bilder/with-css.png">
           <figcaption>Det var bedre!</figcaption>
         </figure>
+        <div id="video-summary1" class="video-summary">
+          <h3>Videoinnføring i CSS-syntaks</h3>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/27833342?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
       </section>
 
       <section id="colors">
         <h2>Farger</h2>
         <p class="lead">Farger kan defineres på flere forskjellige måter i CSS. Du kan bruke et lite utvalg fargenavn, hex-koder, eller RGB, men ikke CMYK.</p>
+        <h3>Fargenavn</h3>
+        <code>
+          <xmp>
+            h1 {
+              color: pink;
+            }
+          </xmp>
+        </code>
+        <p><span class="blue">Blue</span>, <span class="red">red</span>, <span class="lime">lime</span>, <span class="gold">gold</span>! Sjekk ut <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">listen over fargenavn</a> som nettleseren forstår. Disse bruker jeg når jeg er lat.</p>
+        <h3>Hex-koder</h3>
+        <code>
+          <xmp>
+            h1 {
+              color: #FFC0CB;
+            }
+          </xmp>
+        </code>
+        <p>Vet du akkurat hvilken farge du vil ha, må du bruke hex-koder eller RGB. Du kan kopiere disse fra fargevelgeren i programmer som Illustrator eller Photoshop, eller bruke et online verktøy for fargepaletter.</p>
+        <h3>RGB</h3>
+        <code>
+          <xmp>
+            h1 {
+              color: rgb(255,192,203);
+            }
+          </xmp>
+        </code>
+        <p>I RGB-fargekoder representerer hvert tall en verdi for henholdsvis R (rød), G (grønn) og B (blå). Tallene går fra 0 til 255, der 0 er sort (eller ingen farge) og 255 er hvit (eller maks farge!). Lær mer om hvordan RGB fungerer gjennom å teste med <a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank">W3Schools fargekalkulator</a>.</p>
+        <figure>
+          <a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank"><img src="../bilder/rgbcalc.png" /></a>
+        </figure>
+        <div class="section-resources">
+          <h3>Ressurser</h3>
+          <ul>
+            <li><a href="https://www.colorhexa.com/" target="_blank">ColorHexa.com</a> er et supert verktøy for å finne fargekoder og fargekombinasjoner.</li>
+          </ul>
+        </div>
       </section>
 
       <section id="fonts">
@@ -154,10 +195,6 @@
 
       <section id="sizes">
         <h2>Størrelser og avstander</h2>
-      </section>
-
-      <section id="layout">
-        <h2>Layout</h2>
       </section>
 
       <section id="classes">
@@ -184,6 +221,16 @@
           </xmp>
         </code>
         <p class="important">På samme måte som når man gir navn til kode- og bildefiler, må også klassenavn i CSS være uten ÆØÅ eller mellomrom.</p>
+        <div id="video-summary2" class="video-summary">
+          <h3>Videooppsummering</h3>
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/30247946?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="layout">
+        <h2>Layout</h2>
       </section>
 
       <section>
