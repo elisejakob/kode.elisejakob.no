@@ -353,7 +353,17 @@ footer {
   bottom: 0;
   left: 0;
   background: black;
-  color: white;
+  color: white !important;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.brief {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: black;
+  color: white !important;
   text-decoration: none;
   padding: 0 1rem;
 }
