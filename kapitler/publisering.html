@@ -65,8 +65,8 @@
         <li>
           <a href="publisering.html">Publisering</a>
           <ul>
-            <li><a href="publisering.html#domene">Domene</a></li>
             <li><a href="publisering.html#server">Server</a></li>
+            <li><a href="publisering.html#domene">Domene</a></li>
           </ul>
         </li>
         <li>
@@ -94,7 +94,122 @@
 
     <div class="content">
       <section>
-        <h2>Publisering kommer!</h2>
+        <h2>Publisering</h2>
+        <p class="lead">
+          For å publisere nettsiden på internett trenger man to ting:<br/>
+          &ndash; en server (også kalt et webhotell) der filene kan bo<br />
+          &ndash; en adresse (domene) som peker til webhotellet/serveren, slik at andre kan besøke nettsiden
+          
+        </p>
+      </section>
+
+      <section id="server">
+        <h2>Server</h2>
+        <p class="lead">Det finnes mange ulike webhotell å velge mellom, som nettsidefilene kan "serveres" fra.</p>
+        <p>Som vanlige hoteller finnes webhoteller i ulike prisklasser og av ulik kvalitet. Firmaer som selger domener, selger ofte også webhotell. Noen velger også å eie eller leie sin egen server, der de kan sette opp sitt eget webhotell som de serverer filene fra.</p>
+        <p>For enkle nettsider som de vi lager her, finnes det gratis løsninger for webhotell der man kan laste opp nettsidefilene på internett i løpet av sekunder. Jeg bruker <a href="https://netlify.app">Netlify</a>!</p>
+        <ol>
+          <li>
+            <h3>Lag en konto på Netlify</h3>
+            <p>Gå inn på <a href="https://netlify.app">Netlify.app</a> og registrer deg. Når du har opprettet en konto og bekreftet e-postadressen din, kan du logge inn. Du vil da bli møtt av dette:</p>
+            <figure>
+              <img src="../bilder/netlify1.png" />
+            </figure>
+          </li>
+          <li>
+            <h3>Last opp nettsidemappa</h3>
+            <p>Dra nettsidemappa fra skrivebordet (eller hvor du har lagret den) og inn i ruta som vises i Netlify.</p>
+            <figure>
+              <img src="../bilder/netlify2.png" />
+            </figure>
+            <figure>
+              <img src="../bilder/netlify3.png" />
+              <figcaption>Du vil se at rammen der du skal slippe mappa utheves når du holder den over.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Vent mens nettsiden lastes opp</h3>
+            <p>Det tar vanligvis ikke mer enn fem sekunder.</p>
+            <figure>
+              <img src="../bilder/netlify4.png" />
+              <figcaption>Før nettsiden er klar vil det stå "Site has not yet been deployed".</figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/netlify5.png" />
+              <figcaption>Når nettsiden er klar dukker det opp en klikkbar URL.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Besøk nettsiden din!</h3>
+            <p>Klikk på URLen som dukket opp, og se nettsiden live på internett! Nå kan alle som har denne URLen komme inn på nettsiden din.</p>
+            <figure>
+              <img src="../bilder/netlify6.png" />
+            </figure>
+          </li>
+          <li>
+            <h3>Bytt navn på siden</h3>
+            <p>URLen som ble generert automatisk er som regel en rar kombinasjon av ord og tall. Du kan selv endre navn ved å gi siden et navn i Netlify sitt kontrollpanel.</p>
+            <figure>
+              <img src="../bilder/netlify5.png" />
+              <figcaption>Klikk på "Site settings".</figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/netlify7.png" />
+              <figcaption>Under "Site details" -> "Site information" finner du "Change site name".</figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/netlify8.png" />
+              <figcaption>Bytt navnet til det du vil at adressen til nettsiden skal være, og lagre.</figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/netlify9.png" />
+              <figcaption>Vakkert.</figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/netlify10.png" />
+              <figcaption>Når adressa er oppdatert, kan du besøke nettsiden din via den nye URLen, og sende den til alle du kjenner :) Den automatisk genererte adressen vil slutte å funke.</figcaption>
+            </figure>
+          </li>
+        </ol>
+        <h3>Sjekk den ut selv! <a href="https://min-fete-nettside.netlify.app" target="_blank">min-fete-nettside.netlify.app</a></h3>
+        <p>Adressen min-fete-nettside.netlify.app er helt ok. Den er gratis, den er sikker, og det er egentlig alt man trenger. Men hva om jeg at adressen skal være ⭐<strong><em>min-fete-nettside.com</em></strong>⭐ istedenfor?</p>
+      </section>
+
+      <section id="domene">
+        <h2>Domene</h2>
+        <p class="lead">For å lage en egen adresse til nettsiden, må man kjøpe et domene. Domener koster ca 100 kroner i året og oppover.</p>
+        <p class="important">Alle utgifter teller når man lever på studentbudsjett. Det er helt innafor å bruke domenet man lager på Netlify istedenfor å kjøpe et eget, og det går alltids an å legge til senere.</p>
+        <p>Som med webhotell finnes det mange ulike leverandører og ulike prisnivåer for domener. Jeg pleier å bruke <a href="https://domene.shop" target="_blank">Domeneshop</a>. De er norske, og det er nyttig å ha både kundeservice og kontrollpanel på norsk, særlig når man er ny i gamet. Hvis du vet hva du vil at adressa til nettsiden din skal være, kan du gå inn der nå og søke opp domenet du ønsker deg. Da vil du få opp informasjon om det er ledig eller ikke.</p>
+        <figure>
+          <img src="../bilder/domeneshop1.png" />
+          <figcaption>Ok, nettsiden til domeneshop er kanskje litt stygg, men jeg føler meg hjemme her.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/domeneshop2.png" />
+          <figcaption>Domenet jeg ønsker meg er ledig! Nedover i prislista finner du også flere domeneendelser man kan velge mellom. Vet du om du vil ha .no eller .com? Hva med .studio eller .design? Kanskje .pizza?</figcaption>
+        </figure>
+        <p class="important">
+          For å registrere et .no-domene, må man enten ha et norsk organisasjonsnummer, eller registrere seg med personnummer. Kun norske personer og bedrifter har lov til å ha .no-domener.<br />
+          Hos <a href="https://www.norid.no/no/nytt-domenenavn/lag-person-id/">NORID</a> kan du bruke personnummeret ditt for å få generert en person-ID, som du deretter bruker til å registrere et .no-domene.
+        </p>
+        <figure>
+          <img src="../bilder/domeneshop3.png" />
+          <figcaption>Vil du ha flere domener, kan du enten krysse av i forrige steg, eller skrive de inn her. Ellers er det bare å klikke videre.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/domeneshop4.png" />
+          <figcaption>Når du bruker Netlify sitt gratis webhotell, trenger du ikke å kjøpe dette av Domeneshop. Derfor gjør vi ingen endringer her, men lar standardvalget stå.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/domeneshop5.png" />
+          <figcaption>Registrer deg hos Domeneshop med navn og adresse.</figcaption>
+        </figure>
+        <p>Etter å ha registrert deg hos Domeneshop, vil du motta en faktura, enten på mail eller Vipps, avhengig av hva du har valgt. Når denne er betalt, vil det kunne ta litt tid før domenet er klar til bruk.</p>
+      </section>
+
+      <section id="dns">
+        <h2>Koble domene til server</h2>
+        <p>Kommer!</p>
       </section>
     </div>
   </main>
