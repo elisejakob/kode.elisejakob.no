@@ -124,10 +124,10 @@
         <p>Forsøk å lime inn denne koden i den nye CSS-fila som eksempel:</p>
         <code>
           <xmp>
-            h1 {
-              color: pink;
-              font-size: 20px;
-            }
+h1 {
+  color: pink;
+  font-size: 20px;
+}
           </xmp>
         </code>
         <p>Hvis du nå lagrer og går til HTML-fila i nettleseren din, vil du imidlertid se at ingenting har skjedd.</p>
@@ -139,7 +139,7 @@
         <p>Lim inn denne koden rett før den avsluttende &lt;/head>-taggen:</p>
         <code>
           <xmp>
-            <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
           </xmp>
         </code>
         <p class="important">Bytt eventuelt ut filnavnet "style.css" med det du kalte din CSS-fil.</p>
@@ -160,9 +160,9 @@
         <p class="lead">I CSS henviser du til et element i HTMLen som du ønsker å style, deretter bruker du krøllparenteser for å pakke inn de ulike stilreglene.</p>
         <code>
           <xmp>
-            h1 {
-              color: pink;
-            }
+h1 {
+  color: pink;
+}
           </xmp>
         </code>
         <p class="caption">Her henviser vi til <strong>&lt;h1></strong>-elementet i HTMLen, og sier at skriftfargen skal være rosa.</p>
@@ -176,27 +176,27 @@
         <h3>Fargenavn</h3>
         <code>
           <xmp>
-            h1 {
-              color: pink;
-            }
+h1 {
+  color: pink;
+}
           </xmp>
         </code>
         <p><span class="blue">Blue</span>, <span class="red">red</span>, <span class="lime">lime</span>, <span class="gold">gold</span>! Sjekk ut <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">listen over fargenavn</a> som nettleseren forstår. Disse bruker jeg når jeg er lat.</p>
         <h3>Hex-koder</h3>
         <code>
           <xmp>
-            h1 {
-              color: #FFC0CB;
-            }
+h1 {
+  color: #FFC0CB;
+}
           </xmp>
         </code>
         <p>Vet du akkurat hvilken farge du vil ha, må du bruke hex-koder eller RGB. Du kan kopiere disse fra fargevelgeren i programmer som Illustrator eller Photoshop, eller bruke et online verktøy for fargepaletter.</p>
         <h3>RGB</h3>
         <code>
           <xmp>
-            h1 {
-              color: rgb(255,192,203);
-            }
+h1 {
+  color: rgb(255,192,203);
+}
           </xmp>
         </code>
         <p>I RGB-fargekoder representerer hvert tall en verdi for henholdsvis R (rød), G (grønn) og B (blå). Tallene går fra 0 til 255, der 0 er sort (eller ingen farge) og 255 er hvit (eller maks farge!). Lær mer om hvordan RGB fungerer gjennom å teste med <a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank">W3Schools fargekalkulator</a>.</p>
@@ -206,17 +206,17 @@
         <h3>Hva kan endre farge?</h3>
         <code>
           <xmp>
-            h1 {
-              color: yellow;
-            }
+h1 {
+  color: yellow;
+}
           </xmp>
         </code>
         <p class="caption">"Color" endrer skriftfargen.</p>
         <code>
           <xmp>
-            h1 {
-              background-color: yellow;
-            }
+h1 {
+  background-color: yellow;
+}
           </xmp>
         </code>
         <p class="caption">"Background-color" eller bare "background" endrer bakgrunnsfargen.</p>
@@ -236,9 +236,9 @@
         <p>På <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">denne siden på W3schools.com</a> finner du liste over hvilke fonter du ikke trenger å importere egne fontfiler for å kunne bruke.</p>
         <code>
           <xmp>
-            h1 {
-              font-family: "Helvetica", "Arial", sans-serif;
-            }
+h1 {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
           </xmp>
         </code>
         <p class="caption">For å endre fontfamilien bruker man CSS-regelen "font-family". Her har jeg definert Helvetica som førstevalg, Arial som andrevalg, og hvis nettleseren ikke finner noen av de to, velger den operativsystemets nærmeste sans-serif-font. En grundigere forklaring på dette finner du <a href="https://cssreference.io/typography/#font-family" target="_blank">her på cssreference.io</a></p>
@@ -318,27 +318,27 @@
         <p>Alle HTML-elementer er firkantede bokser, som enten ligger ved siden av eller oppå hverandre. Det er likevel ett HTML-element som er den ultimate boksen. Dette elementet har ingen annen funksjon enn å være en boks.</p>
         <code>
           <xmp>
-            <div>
-              Hei det er meg, boksen
-            </div>
+<div>
+  Hei det er meg, boksen
+</div>
           </xmp>
         </code>
-        <div style="background: yellow; margin: 10px; padding: 20px; width: 300px; height: 200px;">Hei det er meg, boksen</div>
+        <div style="background: yellow; color: black; margin: 10px; padding: 20px; width: 300px; height: 200px;">Hei det er meg, boksen</div>
         <p class="caption">HTML-elementet "div" har ingen annen funksjon enn å være en boks. Det sier ingenting om innholdet inni, bare at det skal skilles fra innholdet under og over i koden. "Div" står for <em>division</em>. Det er altså bare en måte å få kontroll på en seksjon av innholdet, for å style det med CSS. Her har jeg brukt CSS for å legge på bakgrunnsfarge, bredde, høyde, ++.</p>
         <p class="important">Høyreklikk på boksen og velg "Inspiser" for å se koden som ligger bak. Du kan teste ut og endre verdiene i koden i inspiser-verktøyet. Dette påvirker ikke nettsiden forøvrig, endringene du gjør forsvinner når du oppdaterer siden eller klikker deg videre til en annen.</p>
         <p>Hvordan boksene vises, defineres av CSS-regelen <strong>display</strong>. Jeg tar for meg det grunnleggende her, men du kan lese mer om denne på <a href="https://cssreference.io/property/display/" target="_blank">cssreference.io</a>.</p>
         <code>
           <xmp>
-            div {
-              display: inline;
-            }
+div {
+  display: inline;
+}
           </xmp>
         </code>
         <p>Når HTML-elementer ligger ved siden av hverandre kalles de for <em>inline</em>. Tekstelementer og bilder er inline som standard. Når de ligger over hverandre kalles det <em>block</em>, og div-elementer er alltid blokker med mindre annet er definert i CSS. En mellomting er <em>inline-block</em>.</p>
         <ul>
-          <li><strong>Inline</strong>-elementer slik som <div style="display: inline; background: yellow;">dette</div> oppfører seg som ord på en linje med tekst. De har en automatisk bredde og høyde og styres av tekst eller andre elementer rundt.</li>
-          <li><strong>Inline-block</strong>-elementer slik som <div style="display: inline-block; background: yellow; width: 150px; margin: 10px; padding: 20px; vertical-align: bottom;">dette</div> oppfører seg som blokker, men ligger fortsatt som på en linje med tekst. Man kan kontrollere elementets bredde og høyde, og avstanden til andre elementer.<br/><br/></li>
-          <li><strong>Block</strong>-elementer slik som <div style="display: block; background: yellow; margin: 10px; padding: 20px;">dette</div> dytter alle andre elementer enten under eller over seg selv. Blokk-elementer opptar en hel rad, og 100% av bredden, med mindre du har sagt noe annet i CSS-koden. På samme måte som med inline-block-elementer, kan man kontrollere elementets bredde og høyde, og avstanden til andre elementer.</li>
+          <li><strong>Inline</strong>-elementer slik som <div style="display: inline; background: yellow; color: black;">dette</div> oppfører seg som ord på en linje med tekst. De har en automatisk bredde og høyde og styres av tekst eller andre elementer rundt.</li>
+          <li><strong>Inline-block</strong>-elementer slik som <div style="display: inline-block; background: yellow; color: black; width: 150px; margin: 10px; padding: 20px; vertical-align: bottom;">dette</div> oppfører seg som blokker, men ligger fortsatt som på en linje med tekst. Man kan kontrollere elementets bredde og høyde, og avstanden til andre elementer.<br/><br/></li>
+          <li><strong>Block</strong>-elementer slik som <div style="display: block; background: yellow; color: black; margin: 10px; padding: 20px;">dette</div> dytter alle andre elementer enten under eller over seg selv. Blokk-elementer opptar en hel rad, og 100% av bredden, med mindre du har sagt noe annet i CSS-koden. På samme måte som med inline-block-elementer, kan man kontrollere elementets bredde og høyde, og avstanden til andre elementer.</li>
         </ul>
         <p class="important">Høyreklikk på de gule elementene og velg "Inspiser" for å se forskjellene i koden!</p>
         <h3>Eksperimenter med boksmodellen</h3>
@@ -348,7 +348,7 @@
             <p>Lag et div-element i din egen .html-fil. Boksen trenger ikke ha noe innhold, men det er lurt for å få et bedre inntrykk av hvordan den fungerer.</p>
             <code>
               <xmp>
-                <div>Yo</div>
+<div>Yo</div>
               </xmp>
             </code>
           </li>
@@ -356,15 +356,15 @@
             <p>Legg til en regel for div-elementet i CSS-fila di, og se hva som skjer når du endrer på verdiene under. Prøv å bytte fra block til inline, og endre verdiene for høyde og bredde.</p>
             <code>
               <xmp>
-                div {
-                  display: block;
-                  background: pink;
-                  width: 200px;
-                  height: 160px;
-                  padding: 30px;
-                  border: 1px solid red;
-                  margin: 50px;
-                }
+div {
+  display: block;
+  background: pink;
+  width: 200px;
+  height: 160px;
+  padding: 30px;
+  border: 1px solid red;
+  margin: 50px;
+}
               </xmp>
             </code>
           </li>
@@ -389,20 +389,20 @@
         <h3>HTML:</h3>
         <code>
           <xmp>
-            <img src="https://kodekurs.netlify.app/bilder/copychu.png">
-            <img src="https://kodekurs.netlify.app/bilder/copychu.png" class="stort-bilde"> 
+<img src="https://kodekurs.netlify.app/bilder/copychu.png">
+<img src="https://kodekurs.netlify.app/bilder/copychu.png" class="stort-bilde"> 
           </xmp>
         </code>
         <h3>CSS:</h3>
         <code>
           <xmp>
-            img {
-              width: 300px;
-            }
+img {
+  width: 300px;
+}
 
-            .stort-bilde {
-              width: 500px;
-            }
+.stort-bilde {
+  width: 500px;
+}
           </xmp>
         </code>
         <p class="important">På samme måte som når man gir navn til kode- og bildefiler, må også klassenavn i CSS være uten ÆØÅ eller mellomrom.</p>

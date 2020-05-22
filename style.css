@@ -212,7 +212,9 @@ code {
   background: rgba(0, 0, 255, .1);
   border: 1px dashed rgba(0, 0, 0, .1);
   margin: 2rem auto;
+  padding: 24px 64px;
   overflow-X: auto;
+  border-radius: 24px;
 }
 
 figure {
@@ -258,6 +260,7 @@ figcaption {
   margin: 2rem auto;
   font-weight: normal;
   text-decoration: none;
+  transition: color .3s ease, border-color .3s ease;
 }
 .shortcut:visited {
   color: blue;
@@ -293,6 +296,15 @@ figcaption {
   margin: 2rem auto;
   padding: 2rem;
   border: 1px dashed rgba(0, 0, 0, .1);
+}
+
+.section-resources h3,
+.video-summary h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: normal;
+  font-family: 'roboto mono', monospace;
 }
 
 /* ------------ animation & graphics ------------ */
@@ -366,4 +378,43 @@ footer {
   color: white !important;
   text-decoration: none;
   padding: 0 1rem;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(9, 7, 26);
+    color: rgb(245, 235, 250);
+  }
+  main, header, .table-of-contents, footer, section {
+    border-color: white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+
+  a {
+    color: yellow;
+  }
+  a:visited {
+    color: gold;
+  }
+  .shortcut, .shortcut:visited {
+    background: transparent;
+    color: lime;
+    border-color: lime;
+  }
+  .shortcut:hover {
+    color: blue;
+    border-color: blue;
+  }
+
+  code {
+    color: #24e666;
+  }
+  .brief, .to-top {
+    background: white;
+    color: black !important;
+  }
 }
