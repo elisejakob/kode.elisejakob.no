@@ -209,7 +209,113 @@
 
       <section id="dns">
         <h2>Koble domene til server</h2>
-        <p>Kommer!</p>
+        <p class="lead">For å få domenet til å fungere som adresse til webhotellet, må vi koble de to sammen.</p>
+        <figure>
+          <img src="../bilder/netlifydomene1.png" />
+          <figcaption>Gå til "Domain settings" i Netlify.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene2.png" />
+          <figcaption>Scroll ned til der du ser "Custom domains", og klikk på "Add custom domain".</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene4.png" />
+          <figcaption>Skriv inn ditt domene som du kjøpte hos Domeneshop, og klikk "Verify". (Jeg bruker ett av mine kuleste domener som eksempel, nbd)</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene5.png" />
+          <figcaption>Netlify vil fortelle deg at domenet allerede har en eier. Yes, det er deg! :D</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene6.png" />
+          <figcaption>Domenet vil dukke opp i lista, sammen med en egen linje for domenet med www foran.</figcaption>
+        </figure>
+        <p class="important">Man trenger vanligvis ikke å skrive www foran når man skriver inn en URL i adressefeltet, så den siste der er kun for å sørge for at de som gjør det også kommer til riktig sted.</p>
+        <p>Det er to ulike måter å koble domenet til webhotellet på; den raske måten, og den sikre måten. Den raske måten er for deg som har dårlig tid og vil at koblingen skal begynne å funke fortest mulig, mens den sikre måten er for deg som er tålmodig, vil ha en URL som begynner med <a href="https://no.wikipedia.org/wiki/HTTPS" target="_blank">https</a>, hengelåssymbol ved siden av domenenavnet i adressefeltet, og masse cred.</p>
+
+        <h2>Den raske måten</h2>
+        <p>Klikk på "Check DNS" ved domenet som ikke har www foran.</p>
+        <figure>
+          <img src="../bilder/netlifydomene7.png" />
+          <figcaption>Her er det en del info, men vi trenger kun IP-adressa til webhotellet, som vi skal bruke til å fortelle domenet hvor det skal peke hen. Markér og kopiér IP-adressen.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene8.png" />
+          <figcaption>Logg inn i Domeneshop og gå til oversikten over dine domener.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene9.png" />
+          <figcaption>Klikk på domenet du vil koble til Netlify, og gå deretter til "DNS-pekere", fane nummer fire fra venstre.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene10.png" />
+          <figcaption>I feltet til høyre skal du lime inn IP-adressen du kopierte fra Netlify.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene11.png" />
+          <figcaption>Klikk på plusstegnet ved siden av feltet for å lagre det. Nå vet domenet hvor webhotellet er! Det kan ta litt tid før endringene trer i kraft og koblingen begynner å funke.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene-www.png" />
+          <figcaption>Sørg for at adressen med www foran funker ved å legge inn den samme IP-adressen for denne også. Husk å skrive www i feltet til venstre.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene12.png" />
+          <figcaption>Når koblingen har begynt å funke vil domenet lede til nettsiden der den bor på Netlify!</figcaption>
+        </figure>
+
+        <h2>Den sikre måten</h2>
+        <figure>
+          <img src="../bilder/netlifydomene13.png" />
+          <figcaption>Klikk på "Options" ved domenet uten www foran og velg "Set up Netlify DNS".</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene14.png" />
+          <figcaption>Her må du verifye domenet på nytt, for den sikre måten er veldig sikker!!</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene15.png" />
+          <figcaption>Minn Netlify på at det er du som eier domenet og legg det til.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene16.png" />
+          <figcaption>Dette steget er valgfritt, så det hopper vi naturligvis over.</figcaption>
+        </figure>
+        <p class="important">
+          Dette er for deg som bruker domenet ditt til noe annet i tillegg, slik som for eksempel e-post. Det vil kunne slutte å funke når du sier at domenet skal peke til Netlify. Hvis du ikke bruker domenet ditt til noe annet enn denne nettsiden, bare fortsett :)
+        </p>
+        <figure>
+          <img src="../bilder/netlifydomene17.png" />
+          <figcaption>Netlify vil så presentere deg for noen rare adresser. Disse skal du lime inn i Domeneshop for å si til domenet hvor webhotellet er. Behold dette vinduet åpent, og gå inn på Domeneshop i et annet nettleservindu.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene8.png" />
+          <figcaption>Logg inn i Domeneshop og gå til oversikten over dine domener.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene9.png" />
+          <figcaption>Klikk på domenet du vil koble til Netlify, og gå deretter til "Navnetjenere", fane nummer tre fra venstre.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene18.png" />
+          <figcaption>Lim inn adressene du fikk av Netlify, én og én, og i rekkefølge. Deretter klikker du "Endre" på knappen nederst som er alt for liten.</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene19.png" />
+          <figcaption>Domeneshop vil så fortelle deg at det kan ta litt tid før koblingen vil fungere. <span style="font-size: 10px">Det er tross alt den sikre måten, ikke den raske måten.</span> Klikk "Fortsett".</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene20.png" />
+          <figcaption>I Netlify vil du nå kunne se at domenet er koblet til ved at det står "Netlify DNS" bak!</figcaption>
+        </figure>
+        <figure>
+          <img src="../bilder/netlifydomene21.png" />
+          <figcaption>Det kan hende du må vente noen timer, men snart vil domenet ditt peke til webhotellet, og du vil få en fin liten hengelås ved siden av adressen som bevis på at du har benyttet deg av Den Sikre Måten.</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Gratulerer med publiseringen!</h2>
+        <p class="lead">&rarr; <a href="mailto:hei@elisejakob.no" target="_blank">Send meg nettsiden din a!</a></p>
       </section>
     </div>
   </main>
